@@ -1,0 +1,77 @@
+#btnClose{
+	-fx-background-color:#87b9cc;
+	-fx-border-color: #87b9cc;
+	-fx-text-fill: #f9f9f9;
+	-fx-font-family: "GODOM";
+}
+
+#SubsCancel1, #SubsCancel2, #SubsCancel3, #SubsCancel4{
+	-fx-background-color: #87b9cc;
+	-fx-border-color: #87b9cc;
+	-fx-text-fill: #f9f9f9;	
+	-fx-font-family: "GODOM";
+}
+
+#btnClose:hover{
+	-fx-background-color: #87b9cc;
+	-fx-border-color: #87b9cc;
+	-fx-text-fill:#ffffff;
+	-fx-cursor:hand;
+	-fx-font-family: "GODOM";
+}
+
+#SubsCancel1:hover, #SubsCancel2:hover,  #SubsCancel3:hover,  #SubsCancel4:hover{
+	-fx-background-color: #87b9cc;
+	-fx-text-fill:#f9f9f9;
+	-fx-border-color: #87b9cc;
+	-fx-cursor: hand;
+	-fx-font-family: "GODOM";
+}
+
+#subFrameLSN{
+	/*-fx-background-image : url("../../z.source/computer.jpg");*/
+	-fx-font-family: "GODOM";
+}
+
+#score1, #score2, #score3, #score4, #lblsubstitle1, #lblsubstitle2, #lblsubstitle3, #lblsubstitle4, 
+#lbllcttime1, #lbllcttime2, #lbllcttime3, #lbllcttime4, #SubsCancel1, #SubsCancel2, #SubsCancel3, #SubsCancel4, #btnClose {
+	-fx-font-family: "GODOM";
+} 
+
+#titleLbl {
+	-fx-font-family: "GODOM";
+	-fx-font-size: 30;
+}
+
+/* Remove spacing */
+.pagination > .pagination-control > .control-box {
+    -fx-spacing: 0;
+}
+
+/* You can control the actual button sizes here */
+.pagination > .pagination-control > .control-box > .number-button,
+.pagination > .pagination-control > .control-box > .bullet-button,
+.pagination > .pagination-control > .control-box > .left-arrow-button,
+.pagination > .pagination-control > .control-box > .right-arrow-button {
+    -fx-background-insets: 0, 1;
+    -fx-background-color: lightgray, #FAFAFA;
+    -fx-min-width: 30;
+    -fx-min-height: 30;
+}
+
+/* Colors on hover */
+.pagination > .pagination-control > .control-box > .number-button:hover,
+.pagination > .pagination-control > .control-box > .bullet-button:hover,
+.pagination > .pagination-control > .control-box > .left-arrow-button:hover,
+.pagination > .pagination-control > .control-box > .right-arrow-button:hover {
+    -fx-background-insets: 0;
+    -fx-background-color: lightgray;
+}
+
+/* Selected toggle color */
+.pagination > .pagination-control > .control-box > .number-button:selected,
+.pagination > .pagination-control > .control-box > .bullet-button:selected{
+    -fx-background-insets: 0;
+    -fx-background-color: #58379A;
+    -fx-text-fill: white;
+}

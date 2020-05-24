@@ -1,0 +1,68 @@
+#subFrameLCT {
+	-fx-background-color: #f9f9f9;
+	-fx-font-family: "GODOM";
+}
+
+#lblLCTName {
+	-fx-background-color: #f9f9f9;
+	-fx-font-family: 30;
+	-fx-border-color: #f9f9f9;
+}
+
+#btnRPT {
+	-fx-border-color: lightgray;
+	-fx-background-color: black;
+	-fx-font-size: 15;
+}
+
+#btnRPT:hover {
+	-fx-border-color: lightgray;
+	-fx-background-color: lightgray;
+	-fx-cursor: hand;
+}
+
+#table {
+	-fx-background-color: #f9f9f9;
+	-fx-border-color: gray;
+	-fx-font-family: "GODOM";
+	-fx-font-size: 12;
+}
+
+#btnModify, #btnDel, #btnCancel, #btnStar {
+	-fx-background-color: #f9f9f9;
+	-fx-border-color: lightgray;
+	-fx-font-family: "GODOM";
+	-fx-font-size: 15;
+}
+
+#btnModify:hover, #btnDel:hover, #btnCancel:hover, #btnStar:hover {
+	-fx-cursor: hand;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

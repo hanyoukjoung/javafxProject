@@ -1,0 +1,32 @@
+#pane {
+	-fx-background-color: #f9f9f9;
+	-fx-border-color: lightgray;
+	-fx-font-family: "GODOM";
+}
+
+#btnMin:hover, #btnClose:hover {
+	-fx-cursor: hand;
+}
+
+#lblTo, #lblReceiver, #lblCont {
+	-fx-font-size: 15;
+}
+
+#taContent {
+	-fx-background-color: #f9f9f9;
+	-fx-border-color: lightgray;
+	-fx-font-size: 12;
+	-fx-cursor: hand;
+}
+
+#btnSend {
+	-fx-background-color: #f9f9f9;
+	-fx-border-color: lightgray;
+	-fx-font-size: 15;
+}
+
+#btnSend:hover {
+	-fx-background-color: lightgray;
+	-fx-border-color: lightgray;
+	-fx-cursor: hand;
+}

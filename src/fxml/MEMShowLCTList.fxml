@@ -1,0 +1,290 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Pagination?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="subFrameLectureList" maxHeight="600.0" maxWidth="873.0" minHeight="600.0" minWidth="850.0" prefHeight="600.0" prefWidth="850.0" stylesheets="@css/MEMShowLCTList.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.MEMShowLCTListController">
+   <children>
+      <Pagination fx:id="pageLecture" layoutX="348.0" layoutY="539.0" maxPageIndicatorCount="5" pageCount="10" prefHeight="53.0" prefWidth="155.0" />
+      <ComboBox fx:id="comBoCata" layoutX="690.0" layoutY="25.0" prefHeight="30.0" prefWidth="155.0" promptText="전체 강의 리스트" />
+      <HBox fx:id="HBoxTitle" layoutX="4.0" layoutY="62.0" prefHeight="53.0" prefWidth="840.0">
+         <children>
+            <GridPane prefHeight="50.0" prefWidth="840.0">
+              <columnConstraints>
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+                     <children>
+                        <Label fx:id="lblimage" text="이미지">
+                           <font>
+                              <Font size="15.0" />
+                           </font></Label>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="1">
+                     <children>
+                        <Label fx:id="lbltitle" text="제목">
+                           <font>
+                              <Font size="15.0" />
+                           </font></Label>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="2">
+                     <children>
+                        <Label fx:id="lbldate" text="날짜">
+                           <font>
+                              <Font size="15.0" />
+                           </font></Label>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="3">
+                     <children>
+                        <Label fx:id="lblinfo" text="설명">
+                           <font>
+                              <Font size="15.0" />
+                           </font></Label>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="4">
+                     <children>
+                        <Label fx:id="lblstar" text="평점">
+                           <font>
+                              <Font size="15.0" />
+                           </font></Label>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="5">
+                     <children>
+                        <Label fx:id="lblpaid" text="유료/무료">
+                           <font>
+                              <Font size="15.0" />
+                           </font></Label>
+                     </children>
+                  </HBox>
+               </children>
+               <HBox.margin>
+                  <Insets />
+               </HBox.margin>
+            </GridPane>
+         </children>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+      </HBox>
+      <HBox fx:id="HBoxContent" layoutX="5.0" layoutY="132.0" prefHeight="390.0" prefWidth="840.0" AnchorPane.bottomAnchor="60.0" AnchorPane.topAnchor="131.0">
+         <children>
+            <GridPane alignment="CENTER" maxHeight="390.0" maxWidth="830.0" prefHeight="390.0" prefWidth="850.0">
+              <columnConstraints>
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints maxHeight="135.0" minHeight="10.0" prefHeight="135.0" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="135.0" minHeight="10.0" prefHeight="135.0" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="135.0" minHeight="10.0" prefHeight="135.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <ImageView fx:id="Img1" fitHeight="100.0" fitWidth="120.0" pickOnBounds="true" preserveRatio="true">
+                     <GridPane.margin>
+                        <Insets left="15.0" />
+                     </GridPane.margin>
+                     <image>
+                        <Image url="@../z.source/javaVideo1.jpg" />
+                     </image></ImageView>
+                  <ImageView fx:id="img2" fitHeight="100.0" fitWidth="120.0" pickOnBounds="true" preserveRatio="true" GridPane.rowIndex="1">
+                     <GridPane.margin>
+                        <Insets left="15.0" />
+                     </GridPane.margin>
+                     <image>
+                        <Image url="@../z.source/pythonVideo1.jpg" />
+                     </image></ImageView>
+                  <ImageView fx:id="img3" fitHeight="100.0" fitWidth="120.0" pickOnBounds="true" preserveRatio="true" GridPane.rowIndex="2">
+                     <GridPane.margin>
+                        <Insets left="15.0" />
+                     </GridPane.margin>
+                     <image>
+                        <Image url="@../z.source/javaVideo2.jpg" />
+                     </image></ImageView>
+                  <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="1">
+                     <children>
+                        <Label fx:id="title1" text="Label" />
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                     <children>
+                        <Label fx:id="title2" text="Label" />
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                     <children>
+                        <Label fx:id="title3" text="Label" />
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="2">
+                     <children>
+                        <Label fx:id="date1" text="Label" />
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="2" GridPane.rowIndex="1">
+                     <children>
+                        <Label fx:id="date2" text="Label" />
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="2" GridPane.rowIndex="2">
+                     <children>
+                        <Label fx:id="date3" text="Label" />
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="3">
+                     <children>
+                        <Text fx:id="cont1" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="3" GridPane.rowIndex="1">
+                     <children>
+                        <Text fx:id="cont2" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="3" GridPane.rowIndex="2">
+                     <children>
+                        <Text fx:id="cont3" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="4">
+                     <children>
+                        <Button fx:id="btnStar1" mnemonicParsing="false" onAction="#btnStar1Click" style="-fx-background-radius: 20;">
+                           <HBox.margin>
+                              <Insets right="5.0" />
+                           </HBox.margin>
+                        </Button>
+                        <Button fx:id="btnStar2" mnemonicParsing="false" onAction="#btnStar2Click" style="-fx-background-radius: 20;">
+                           <HBox.margin>
+                              <Insets right="5.0" />
+                           </HBox.margin>
+                        </Button>
+                        <Button fx:id="btnStar3" mnemonicParsing="false" onAction="#btnStar3Click" style="-fx-background-radius: 20;">
+                           <HBox.margin>
+                              <Insets right="5.0" />
+                           </HBox.margin>
+                        </Button>
+                        <Button fx:id="btnStar4" mnemonicParsing="false" onAction="#btnStar4Click" style="-fx-background-radius: 20;">
+                           <HBox.margin>
+                              <Insets right="5.0" />
+                           </HBox.margin>
+                        </Button>
+                        <Button fx:id="btnStar5" mnemonicParsing="false" onAction="#btnStar5Click" style="-fx-background-radius: 20;" />
+                     </children>
+                  </HBox>
+                  <HBox prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="4" GridPane.rowIndex="1">
+                     <children>
+                        <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+                           <children>
+                              <Button fx:id="btnStar6" mnemonicParsing="false" onAction="#btnStar6Click" style="-fx-background-radius: 20;">
+                                 <HBox.margin>
+                                    <Insets right="5.0" />
+                                 </HBox.margin>
+                              </Button>
+                              <Button fx:id="btnStar7" mnemonicParsing="false" onAction="#btnStar7Click" style="-fx-background-radius: 20;">
+                                 <HBox.margin>
+                                    <Insets right="5.0" />
+                                 </HBox.margin>
+                              </Button>
+                              <Button fx:id="btnStar8" mnemonicParsing="false" onAction="#btnStar8Click" style="-fx-background-radius: 20;">
+                                 <HBox.margin>
+                                    <Insets right="5.0" />
+                                 </HBox.margin>
+                              </Button>
+                              <Button fx:id="btnStar9" mnemonicParsing="false" onAction="#btnStar9Click" style="-fx-background-radius: 20;">
+                                 <HBox.margin>
+                                    <Insets right="5.0" />
+                                 </HBox.margin>
+                              </Button>
+                              <Button fx:id="btnStar10" mnemonicParsing="false" onAction="#btnStar10Click" style="-fx-background-radius: 20;" />
+                           </children>
+                        </HBox>
+                     </children>
+                  </HBox>
+                  <HBox prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="4" GridPane.rowIndex="2">
+                     <children>
+                        <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+                           <children>
+                              <Button fx:id="btnStar11" mnemonicParsing="false" onAction="#btnStar11Click" style="-fx-background-radius: 20;">
+                                 <HBox.margin>
+                                    <Insets right="5.0" />
+                                 </HBox.margin>
+                              </Button>
+                              <Button fx:id="btnStar12" mnemonicParsing="false" onAction="#btnStar12Click" style="-fx-background-radius: 20;">
+                                 <HBox.margin>
+                                    <Insets right="5.0" />
+                                 </HBox.margin>
+                              </Button>
+                              <Button fx:id="btnStar13" mnemonicParsing="false" onAction="#btnStar13Click" style="-fx-background-radius: 20;">
+                                 <HBox.margin>
+                                    <Insets right="5.0" />
+                                 </HBox.margin>
+                              </Button>
+                              <Button fx:id="btnStar14" mnemonicParsing="false" onAction="#btnStar14Click" style="-fx-background-radius: 20;">
+                                 <HBox.margin>
+                                    <Insets right="5.0" />
+                                 </HBox.margin>
+                              </Button>
+                              <Button fx:id="btnStar15" mnemonicParsing="false" onAction="#btnStar15Click" style="-fx-background-radius: 20;" />
+                           </children>
+                        </HBox>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="5">
+                     <children>
+                        <Label fx:id="paidfree1" text="Label" />
+                     </children>
+                     <GridPane.margin>
+                        <Insets />
+                     </GridPane.margin>
+                  </HBox>
+                  <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="5" GridPane.rowIndex="1">
+                     <children>
+                        <Label fx:id="paidfree2" text="Label" />
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="5" GridPane.rowIndex="2">
+                     <children>
+                        <Label fx:id="paidfree3" text="Label" />
+                     </children>
+                     <GridPane.margin>
+                        <Insets />
+                     </GridPane.margin>
+                  </HBox>
+               </children>
+               <HBox.margin>
+                  <Insets />
+               </HBox.margin>
+            </GridPane>
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>

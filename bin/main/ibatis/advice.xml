@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE sqlMap
+	PUBLIC "-//ibatis.apache.org//DTD SQL Map 2.0//EN"
+	"http://ibatis.apache.org/dtd/sql-map-2.dtd">
+<!--도움말 -->
+<sqlMap namespace="advice">
+<select id="getjavaadviceList" resultClass="AdviceVO">
+select adv_no,adv_tag,adv_title,adv_cont,lang_no
+from advice1
+where lang_no = 0
+order by adv_no asc
+</select>
+<select id="getoracleList" resultClass="AdviceVO">
+select adv_no,adv_tag,adv_title,adv_cont,lang_no
+from advice1
+where lang_no = 1
+order by adv_no asc
+</select>
+
+<select id="getsearchjava" resultClass="AdviceVO" parameterClass="String">
+select * from advice1
+where adv_tag like '%'||#tagjava#||'%' and
+lang_no = 0
+</select>
+
+<select id="getsearchoracle" resultClass="AdviceVO" parameterClass="String">
+select * from advice1
+where adv_tag like '%'||#tagoracle#||'%' and
+lang_no = 1
+</select>
+
+<select id="getsearch" resultClass="AdviceVO" parameterClass="String">
+select adv_no,adv_tag,adv_title,adv_cont,lang_no
+from advice1
+where adv_title like '%'||#adv_title#||'%'
+order by adv_no asc
+</select>
+</sqlMap>

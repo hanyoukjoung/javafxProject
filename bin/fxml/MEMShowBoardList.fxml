@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Pagination?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="subFrameBoard" stylesheets="@css/MEMShowBoardList.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.MEMShowBoardListController">
+   <children>
+      <BorderPane layoutY="1.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="850.0">
+         <center>
+            <TableView fx:id="tableBoard" maxHeight="-Infinity" maxWidth="800.0" onMouseClicked="#tableBoardClick" prefHeight="440.0" prefWidth="800.0" BorderPane.alignment="CENTER">
+              <columns>
+                <TableColumn fx:id="colBoardNum" prefWidth="97.0" text="게시글 번호" />
+                <TableColumn fx:id="colBoardTitle" prefWidth="355.0" text="게시글 제목" />
+                  <TableColumn fx:id="colBoardWriter" prefWidth="131.0" text="작성자" />
+                  <TableColumn fx:id="colBoardDate" prefWidth="123.0" text="작성일자" />
+                  <TableColumn fx:id="colBoardCnt" prefWidth="92.0" style="-fx-text-alignment: center;" text="조회수" />
+              </columns>
+            </TableView>
+         </center>
+         <top>
+            <AnchorPane prefHeight="81.0" prefWidth="850.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Label fx:id="lblTitle" layoutX="36.0" layoutY="15.0" text="게시판">
+                     <font>
+                        <Font size="35.0" />
+                     </font></Label>
+                  <ComboBox fx:id="comboBoardList" layoutX="670.0" layoutY="34.0" onAction="#comboBoardListClick" prefHeight="37.0" prefWidth="156.0" promptText="자유게시판" AnchorPane.topAnchor="45.0" />
+               </children>
+            </AnchorPane>
+         </top>
+         <bottom>
+            <GridPane prefHeight="51.0" prefWidth="850.0" BorderPane.alignment="CENTER">
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="733.0" minWidth="10.0" prefWidth="715.0" />
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="419.0" minWidth="10.0" prefWidth="135.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <Pagination fx:id="pageBoard" maxPageIndicatorCount="5" prefHeight="49.0" prefWidth="850.0" GridPane.columnSpan="2" />
+                  <AnchorPane prefHeight="51.0" prefWidth="154.0" GridPane.columnIndex="1">
+                     <children>
+                        <Button fx:id="btnInsert" layoutX="37.0" layoutY="14.0" mnemonicParsing="false" onAction="#btnInsertClick" prefHeight="30.0" text="게시글 등록" AnchorPane.rightAnchor="25.0" AnchorPane.topAnchor="5.0" />
+                     </children>
+                  </AnchorPane>
+               </children>
+            </GridPane>
+         </bottom>
+      </BorderPane>
+   </children>
+</AnchorPane>

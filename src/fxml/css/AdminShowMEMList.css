@@ -1,0 +1,74 @@
+/*
+ * @author 강인경
+ * @since 2020-02-03
+ *
+ * [ID 안내]
+ * 
+ * subFrameMEM : AnchorPane
+ * comboMem : 일반회원/블랙리스트/신고회원 중 선택 가능한 ComboBox
+ * tfSearchMem : 회원을 검색할 수 있는 Text Field 
+ * btnSearch : 검색 Button
+ * btnBlkCancel : 블랙리스트 해제 Button
+ * tableMem : 회원리스트 테이블
+ * memId : 회원ID 컬럼(열)
+ * memName : 회원명 컬럼(열)
+ * memAddr : (회원)주소 컬럼(열)
+ * langItrst : 관심있는 언어 컬럼(열)
+ * langMajor : 자신있는 언어 컬럼(열)
+ * report : 누적신고 컬럼(열)
+ * pagination : Pagination
+ *  
+ */
+
+#subFrameMEM {
+	-fx-background-color: #f9f9f9;
+}
+
+#lblMainTitle {
+	-fx-background-color: #f9f9f9;
+	-fx-font-family: "GODOM";
+	-fx-font-size: 30;
+}
+
+#comboMem, #tfSearchMem {
+	-fx-background-color: #f9f9f9;
+	-fx-border-color: #3f2b63;
+	-fx-border-radius:5px;
+	-fx-font-family: "GODOM";
+	-fx-font-size: 14;
+}
+
+#comboMem:hover {
+	-fx-cursor: hand;
+}
+
+#btnSearch, #btnBlkCancel {
+	-fx-background-color: #f9f9f9;
+	-fx-border-color: #3f2b63;
+	-fx-border-radius:5px;
+	-fx-font-family: "GODOM";
+	-fx-font-size: 14;
+}
+
+#btnSearch:hover, #btnBlkCancel:hover {
+	-fx-background-color: #3f2b63;
+	-fx-border-color: #3f2b63;
+	-fx-text-fill: #f9f9f9;
+	-fx-font-family: "GODOM";
+	-fx-font-size: 14;
+	-fx-cursor: hand;
+}
+
+#tableMem {
+	-fx-background-color: #f9f9f9;
+	-fx-border-color: #3f2b63;
+}
+
+#memId, #memName, #memAddr, #langItrst, #langMajor, #report {
+	-fx-font-family: "GODOM";
+	-fx-font-size: 13;
+}
+
+#pagination:hover {
+	-fx-cursor: hand;
+}

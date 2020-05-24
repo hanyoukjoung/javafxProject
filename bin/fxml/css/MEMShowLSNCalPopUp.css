@@ -1,0 +1,15 @@
+#mainFrame{
+	-fx-border-color:#3f2b63;
+	-fx-border-width:2px;
+}
+#btnCalBeforeMonth, #btnCalAfterMonth,#btnCalBeforeYear,#btnCalAfterYear,#btnClear,#btnSave{
+	-fx-background-color:f9f9f9;
+	-fx-border-color:#3f2b63;
+	-fx-border-radius:5px;
+}
+#btnCalBeforeMonth:hover, #btnCalAfterMonth:hover,#btnCalBeforeYear:hover,#btnCalAfterYear:hover,#btnClear:hover,#btnSave:hover{
+	-fx-border-color:#cca0ff;
+	-fx-background-color:#cca0ff;
+	-fx-text-fill:#ffffff;
+	-fx-cursor:hand;
+}

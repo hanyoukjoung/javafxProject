@@ -1,0 +1,130 @@
+#mainFrame {
+	-fx-background-color: #f9f9f9;
+	-fx-border-color: #3F2B63;
+}
+
+#subFrameList {
+	-fx-background-color: #3F2B63;
+}
+
+#underSubframeList {
+	-fx-border-color: #3F2B63;
+	-fx-background-color: #3F2B63;
+	
+}
+
+#rightText {
+	-fx-background-color: #f9f9f9;
+}
+
+#lblRight1, #lblRight2 {
+	-fx-text-fill: #f9f9f9;
+}
+
+#black {
+	-fx-background-color: black;
+}
+ 
+#mainTitle {
+	-fx-font-family: "Catharsis Cargo";
+	-fx-font-size: 45;
+	-fx-font-weight: bold;
+}
+
+#comboMLang, #comboILang {
+	-fx-font-family: "GODOM";
+	-fx-font-size: 12;
+	-fx-border-color: #3F2B63;
+	-fx-background-color: #f9f9f9;
+}
+
+#btnMSG, #btnLogOut, #btnMsg {
+	-fx-font-family: "GODOM";
+	-fx-font-size: 14;
+	-fx-border-color: #f9f9f9;
+	-fx-background-color: #f9f9f9;
+	
+}
+#btnSearch{
+	-fx-border-radius:5px;
+	-fx-border-color:#3f2b63;
+	-fx-background-color: #f9f9f9;
+}
+
+#btnSearch:hover {
+	-fx-font-family: "GODOM";
+	-fx-font-size: 14;
+	-fx-border-color: #3F2B63;
+	-fx-background-color: #3F2B63;
+	-fx-text-fill:#f9f9f9;
+}
+
+#tfSearch {
+	-fx-border-radius:5px;
+	-fx-border-color: #3F2B63;
+	-fx-background-color: #f9f9f9;
+}
+
+#btnClose, #btnMini {
+	-fx-background-color: #f9f9f9;
+}
+
+#lblUserName {
+	-fx-font-family: "GodoM";
+	-fx-font-size: 15;
+	-fx-background-color: #f9f9f9;
+}
+
+#lblRight1, #lblRight2 {
+	-fx-font-family: "GODOM";
+	-fx-font-size:12;
+}
+
+
+/*----------------------------------------------------*/
+
+#btnMyPage, #btnALG, #btnMyLCT, #btnSubLCT, #btnBoard, #btnLSN, #btnShowChart{
+	-fx-font-family: "GODOM";
+	-fx-font-size: 20;
+	-fx-text-fill: #f9f9f9;
+	-fx-background-color: #3F2B63;
+}
+
+#btnALG:hover, #btnMyLCT:hover, #btnSubLCT:hover, #btnBoard:hover, #btnLSN:hover, #btnShowChart:hover{
+	-fx-font-family: "GODOM";
+	-fx-font-size: 20;
+	-fx-border-color: #bf76c2;
+	-fx-background-color: #bf76c2;
+	-fx-text-fill: #ffffff;
+}
+
+/*----------------------------------------------------*/
+#mainTitleC {
+	-fx-font-size: 45;
+	-fx-font-weight: bold;
+}
+
+#mainTitleC:hover{
+	-fx-cursor: hand;
+}
+
+
+#lblWelcome {
+	-fx-font-family: "GodoM";
+	-fx-font-size: 13;
+	-fx-background-color: #f9f9f9;
+}
+
+#btnLogOut, #btnMSG {
+	-fx-background-color: #f9f9f9;
+	-fx-border-color: #f9f9f9;
+}
+
+
+#btnLogOut, #imgLogOut, #btnMSG, #imgMSG, #btnSearch, #comboMLang, #comboILang, 
+#btnLSN, #btnMyPage, #btnSubLCT, #btnMyLCT, #btnALG, #btnBoard, #btnShowChart:hover {
+	-fx-cursor: hand;
+}
+
+
+

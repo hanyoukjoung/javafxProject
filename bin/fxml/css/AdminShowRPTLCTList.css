@@ -1,0 +1,55 @@
+/*
+ * @author 강인경
+ * @since 2020-02-03
+ *
+ * [ID 안내]
+ * 
+ * RptLctFrame : AnchorPane
+ * tableRptLct : 신고된 강의 Table
+ * lct_name : 강의명 컬럼(열)
+ * lct_mem_id : 강사 ID 컬럼(열)
+ * lct_upload_date : 업로드일자 컬럼(열)
+ * rpt_date : 신고일자 컬럼(열)
+ * mem_id : 신고 회원 ID 컬럼(열)
+ * lct_status : 유료/ 무료 여부 컬럼(열)
+ * btnDel : 삭제 Button
+ * btnCancel : 취소 Button
+ *
+ */ 
+
+#RptLctFrame {
+	-fx-background-color: #f9f9f9;
+}
+
+#lblMainTitle {
+	-fx-background-color: #f9f9f9;
+	-fx-font-family: "GODOM";
+	-fx-font-size: 35;
+}
+
+#tableRptLct {
+	-fx-background-color: #f9f9f9;
+	-fx-border-color : #3f2b63;
+	-fx-font-family: "GODOM";
+	-fx-font-size: 15;
+}
+
+#lct_name, #lct_mem_id, #lct_upload_date, #rpt_date, #mem_id, #lct_status {
+	/*-fx-background-color: #f9f9f9;*/
+	-fx-font-family: "GODOM";
+	-fx-font-size: 12;
+} 
+
+#btnDel, #btnCancel {
+	-fx-background-color: #f9f9f9;
+	-fx-border-color : #3f2b63;
+	-fx-font-family: "GODOM";
+	-fx-font-size: 15;	
+}
+
+#btnDel:hover, #btnCancel:hover {
+	-fx-background-color: #3f2b63;
+	-fx-border-color : #3f2b63;
+	-fx-text-fill: #f9f9f9;
+	-fx-cursor: hand;
+}

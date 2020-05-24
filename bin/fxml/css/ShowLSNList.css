@@ -1,0 +1,85 @@
+#btnILang1:hover, #btnILang2:hover, #btnILang3:hover, #btnILang4:hover, #btnILang5:hover, #btnILang6:hover{
+	-fx-background-color:#87b9cc;
+	-fx-border-color:#87b9cc;
+	-fx-text-fill:#ffffff;
+	-fx-cursor:hand;
+	-fx-font-family: "GODOM";
+	
+} 
+#btnMLang1:hover, #btnMLang2:hover, #btnMLang3:hover, #btnMLang4:hover, #btnMLang5:hover, #btnMLang6:hover,#btnInsert:hover{
+ 	-fx-background-color: #87b9cc;
+ 	-fx-border-color: #87b9cc;
+	-fx-text-fill:#ffffff;
+	-fx-cursor:hand;
+	-fx-font-family: "GODOM";
+	
+}
+#btnILang1,#btnILang2,#btnILang3,#btnILang4,#btnILang5,#btnILang6,
+#btnMLang1,#btnMLang2,#btnMLang3,#btnMLang4,#btnMLang5,#btnMLang6{
+	-fx-background-color: #f9f9f9;
+	-fx-border-color:lightgray;
+	-fx-font-family: "GODOM";
+	
+}
+
+#btnInsert {
+	 -fx-border-color: #87b9cc;
+	 -fx-font-family: "GODOM";
+	 
+}
+
+#subFrameLSN{
+	/*-fx-background-color: #58e8de;*/
+	/*-fx-background-image : url("../../z.source/imgPastel1.jpg");*/
+	-fx-border-color: #f9f9f9;
+	-fx-background-color: #f9f9f9;
+}
+
+#taLSN1, #taLSN2, #taLSN3, #taLSN4, #taLSN5, #taLSN6 {
+	-fx-font-family: "GODOM";
+	-fx-font-size : 13;
+	-fx-text-fill : gray;
+}
+
+#txFlowLSN1, #txFlowLSN2, #txFlowLSN3, #txFlowLSN4, #txFlowLSN5, #txFlowLSN6 {
+	-fx-background-color: #7cb0c4; 
+	-fx-border-color: #7cb0c4;
+	-fx-font-line-height: 2;
+}
+
+#pagenation:hover {
+	-fx-cursor: hand;
+}
+
+/* Remove spacing */
+.pagination > .pagination-control > .control-box {
+    -fx-spacing: 0;
+}
+
+/* You can control the actual button sizes here */
+.pagination > .pagination-control > .control-box > .number-button,
+.pagination > .pagination-control > .control-box > .bullet-button,
+.pagination > .pagination-control > .control-box > .left-arrow-button,
+.pagination > .pagination-control > .control-box > .right-arrow-button {
+    -fx-background-insets: 0, 1;
+    -fx-background-color: lightgray, #FAFAFA;
+    -fx-min-width: 30;
+    -fx-min-height: 30;
+}
+
+/* Colors on hover */
+.pagination > .pagination-control > .control-box > .number-button:hover,
+.pagination > .pagination-control > .control-box > .bullet-button:hover,
+.pagination > .pagination-control > .control-box > .left-arrow-button:hover,
+.pagination > .pagination-control > .control-box > .right-arrow-button:hover {
+    -fx-background-insets: 0;
+    -fx-background-color: lightgray;
+}
+
+/* Selected toggle color */
+.pagination > .pagination-control > .control-box > .number-button:selected,
+.pagination > .pagination-control > .control-box > .bullet-button:selected{
+    -fx-background-insets: 0;
+    -fx-background-color: #58379A; /*colour: purple*/
+    -fx-text-fill: white;
+}

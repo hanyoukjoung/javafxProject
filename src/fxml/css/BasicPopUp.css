@@ -1,0 +1,44 @@
+#subFrameSubsAlert{
+	/*-fx-background-image : url("../../z.source/computer.jpg");*/
+	-fx-background-color: #f9f9f9;
+	-fx-border-color: lightgray;
+	-fx-font-family: "GODOM";
+}
+
+#btnClose, #btnMin{
+	-fx-background-color:f9f9f9;
+}
+
+#btnConfirm, #btnCancel{
+	-fx-background-color: #f9f9f9;
+	-fx-border-color: lightgray;
+	-fx-font-family: "GODOM";
+	-fx-font-size: 15;
+}
+
+#btnClose:hover, #btnMin:hover {
+	-fx-cursor: hand;
+}
+
+#btnConfirm:hover, #btnCancel:hover{
+	-fx-background-color: lightgray;
+	-fx-border-color: lightgray;
+	/*-fx-text-fill: #ffffff;*/
+	-fx-cursor:hand;
+}
+
+#lbText {
+	-fx-font-family: "GODOM";
+	-fx-background-color: #f9f9f9;
+	-fx-border-color: #f9f9f9;
+}
+
+#tfText {
+	-fx-font-family: "GODOM";
+	-fx-background-color: #e8dada;
+	-fx-border-color: #e8dada;
+}
+
+#tfText:hover {
+	-fx-background-color: #f9f9f9;
+}

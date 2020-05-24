@@ -1,0 +1,16 @@
+#btnConfirm{
+	-fx-background-color:f9f9f9;
+	-fx-border-color:#3f2b63;
+	-fx-border-radius:5px;
+}
+#btnConfirm:hover{
+	-fx-background-color:#cca0ff;
+	-fx-border-color:#cca0ff;
+	-fx-cursor:hand;
+}
+#pane{
+	-fx-border-color:#3f2b63;
+	-fx-border-width:2px;
+	-fx-background-color:#ffffff;
+}
+

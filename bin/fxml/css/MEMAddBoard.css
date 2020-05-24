@@ -1,0 +1,120 @@
+/*
+ * @author 강인경
+ * @since 2020-02-04
+ *
+ * [ID 안내]
+ * 
+ * subFrameBoardInsert : GridPane
+ * lblMainTitle : 게시글 등록 (제목) Label
+ * lblWriter : 작성자(제목) Label 
+ * lblTitle : 제목(제목) Label
+ ----------------------------------------------------------------
+ //	lbl_Writer와 다릅니다.
+ * lblWriter : ***작성자의 이름을 받아오는 Label*** (ex. 홍길동)
+ ----------------------------------------------------------------
+ * tfTitle : 제목을 입력하는 Text Field
+ * taContent : 내용을 입력하는 Text Area
+ * btnInsert : 게시글 등록 Button
+ * btnBoardList : 게시글 목록으로 돌아가는 Button
+ *
+ * 분할된 각각의 gridPane 구역에 ID를 줌
+ * gridPane1, gridPane2, gridPane3, gridPane4, gridPane5
+ *
+ */
+ 
+ #subFrameBoardInsert {
+ 	-fx-background-color: #f9f9f9;
+ }
+ 
+ #lblMainTitle {
+ 	-fx-background-color: #f9f9f9;
+ 	-fx-font-family: "GODOM";
+ 	-fx-font-size : 35;
+ }
+ 
+ #gridPane1, #gridPane2, #gridPane3, #gridPane4, #gridPane5 {
+ 	-fx-background-color: #f9f9f9;
+ 	-fx-border-color: #3f2b63;
+ } 
+ 
+ #lblWriter, #lblTitle, #lblWriterName, #tfTitle {
+ 	-fx-background-color: #f9f9f9;
+ 	/*-fx-border-color : #3f2b63;*/
+ 	-fx-font-family: "GODOM";
+ 	-fx-font-size: 15;
+ }
+ 
+ #tfTitle {
+ 	-fx-background-color: #f9f9f9;
+ 	-fx-border-color: #gray;
+ 	-fx-font-family: "GODOM";
+ 	-fx-font-size: 13;
+ }
+ 
+ #taContent {
+ 	-fx-background-color: #f9f9f9;
+ 	/*-fx-border-color: #3f2b63;*/
+ 	-fx-font-family: "GODOM";
+ 	-fx-font-size: 15;
+ }
+ 
+ #tfTitle:hover, #taContent:hover {
+ 	-fx-cursor: hand;
+ }
+ 
+ #btnBoardList {
+ 	-fx-background-color: #f9f9f9;
+ 	-fx-border-color: #3f2b63;
+ 	-fx-font-family: "GODOM";
+ 	-fx-font-size: 15; 
+ }
+ 
+  #btnBoardList:hover {
+ 	-fx-background-color : #3f2b63;
+ 	-fx-border-color : #3f2b63;
+ 	-fx-text-fill: #f9f9f9;
+ 	-fx-cursor: hand;
+ }
+ 
+ #btnBack {
+ 	-fx-background-color: #87b9bb;
+ 	-fx-border-color: #87b9bb;
+ 	-fx-text-fill: #f9f9f9;
+ 	-fx-font-family: "GODOM";
+ 	-fx-font-size: 13; 
+ }
+ 
+ #btnBack:hover {
+ 	-fx-cursor: hand;
+ 	-fx-background-color: #87b9bb;
+ 	-fx-border-color: #87b9bb;
+ 	-fx-text-fill: #f9f9f9;
+ 	-fx-font-family: "GODOM";
+ 	-fx-font-size: 13; 
+ }
+ 
+ #btnInsert {
+ 	-fx-background-color: #87b9bb;
+ 	-fx-border-color: #87b9bb;
+ 	-fx-text-fill: #f9f9f9;
+ 	-fx-font-family: "GODOM";
+ 	-fx-font-size: 13; 
+ }
+ 
+ #btnInsert:hover {
+ 	-fx-cursor: hand;
+ 	-fx-background-color: #87b9bb;
+ 	-fx-border-color: #87b9bb;
+ 	-fx-text-fill: #f9f9f9;
+ 	-fx-font-family: "GODOM";
+ 	-fx-font-size: 13; 
+ }
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 

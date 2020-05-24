@@ -1,0 +1,49 @@
+/*
+ * @author 강인경
+ * @since 2020-02-03
+ *
+ * [ID 안내]
+ * 
+ 
+ * lblDate1 : 첫번째 레슨 파일의 업로드 일자 Label
+ * lblFileName1 : 첫번째 업로드 파일명 Label
+ * lblSave1 : 저장 Label
+ * lblASave1 : 다른 이름으로 저장 Label
+ 
+ * lblDate2 : 두번째 레슨 파일의 업로드 일자 Label
+ * lblFileName2 : 두번째 업로드 파일명 Label
+ * lblSave2 : 저장 Label
+ * lblASave2 : 다른 이름으로 저장 Label
+ 
+ * lblDate3 : 세번째 레슨 파일의 업로드 일자 Label
+ * lblFileName3 : 세번째 업로드 파일명 Label
+ * lblSave3 : 저장 Label
+ * lblASave3 : 다른 이름으로 저장 Label
+ 
+ * lblDate4 : 네번째 레슨 파일의 업로드 일자 Label
+ * lblFileName4 : 네번째 업로드 파일명 Label
+ * lblSave4 : 저장 Label
+ * lblASave4 : 다른 이름으로 저장 Label
+ 
+ */
+
+ #lblDate1, #lblDate2, #lblDate3, #lblDate4 {
+ 	-fx-font-family: "GODOM";
+ 	-fx-font-size: 13;
+ }
+ 
+ #lblFileName1, #lblFileName2, #lblFileName3, #lblFileName4 {
+ 	-fx-font-family: "GODOM";
+ 	-fx-font-size: 13;
+ }
+ 
+ #lblSave1, #lblSave2, #lblSave3, #lblSave4 {
+ 	-fx-font-family: "GODOM";
+ 	-fx-font-size: 13;
+ }
+ 
+ #lblASave1, #lblASave2, #lblASave3, #lblASave4 {
+ 	-fx-font-family: "GODOM";
+ 	-fx-font-size: 13;
+ }
+ 

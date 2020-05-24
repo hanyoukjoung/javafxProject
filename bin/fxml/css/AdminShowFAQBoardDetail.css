@@ -1,0 +1,55 @@
+/*
+ * @author 강인경
+ * @since 2020-02-03
+ *
+ * [ID 안내]
+ * 
+ * subFrameBrdSearch : AnchorPane
+ * taBoardCont : 게시글 내용 Text Area
+ * btnBoardModify : 게시글 수정 button
+ * btnBoardDel : 게시글 삭제 button
+ * btnBoardList : (게시글) 목록 button
+ * lblBoardTitleTxt : FAQ 게시글 '제목' 상세를 담을 Label
+ *
+ */
+
+#subFrameBrdSearch {
+	-fx-background-color: #f9f9f9;
+}
+
+#lblMainTitle {
+	-fx-background-color: #f9f9f9;
+	-fx-font-family: "GODOM"; 
+	-fx-font-size: 35;
+}
+#lblBoardWriter, #lblBoardWriterName, #lblBoardTitle, #lblBoardTitleTxt {
+	-fx-background-color: #f9f9f9;
+	-fx-font-family: "GODOM";
+	-fx-font-size: 18;
+}
+
+#taBoardCont {
+	-fx-background-color: #f9f9f9;
+	-fx-border-color: #3f2b63;
+	-fx-font-family: "GODOM";
+}
+
+#btnBoardModify, #btnBoardDel, #btnBoardList, #btnBoardCommentInsert {
+	-fx-background-color: #f9f9f9;
+	-fx-border-color: #3f2b63;
+	-fx-font-family: "GODOM";
+	-fx-font-size: 15;
+}
+
+#btnBoardModify:hover, #btnBoardDel:hover, #btnBoardList:hover, #btnBoardCommentInsert:hover {
+	-fx-background-color: #3f2b63;
+	-fx-border-color: #3f2b63;
+	-fx-text-fill: #f9f9f9;
+	-fx-cursor: hand;
+}
+
+
+
+
+
+

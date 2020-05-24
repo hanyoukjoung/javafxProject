@@ -1,0 +1,150 @@
+
+#subFrameQuestionList, #frameAlgQuestion {
+	-fx-background-color: #f9f9f9;	
+}
+
+#lblTitle {
+	-fx-font-family: "GodoM";
+	-fx-font-size: 35;
+}
+
+#comBoxLv {
+	-fx-background-color: #f9f9f9;
+	-fx-border-color: #3F2B63;
+}
+
+#tableAlg {
+	-fx-border-color:#868E95;
+    -fx-font-family: "GodoM";
+}
+
+
+
+
+#colSort, #colQuestion, #colTitle, #colSubmit, #colMem, #colSuccess {
+	-fx-font-family: "GodoM";
+	-fx-font-size: 13;
+}
+
+
+/*
+
+
+
+
+#tableAlg .column-header {
+    -fx-background-color: transparent;
+    -fx-border-color:#B3B9BF;
+    -fx-border-width:0 1 0 0;
+    -fx-border-style: segments(0, 2, 50, 15);
+}
+
+#tableAlg .column-header-background{
+    -fx-background-color: white;
+    -fx-border-width:0 0 1 0;
+    -fx-border-style:solid;
+    -fx-border-color:#B3B9BF;
+    -fx-padding: 3 0 3 10;
+}
+
+#tableAlg .column-header:last-visible {
+    -fx-border-color:transparent;
+}
+
+#tableAlg .filler{
+    -fx-opacity:0;
+}
+
+#tableAlg .table-row-cell {
+    -fx-cell-size: 29px;
+}
+#tableAlg .table-row-cell .text{
+    -fx-fill:#25292e;
+}
+#tableAlg .table-column{
+    -fx-border-color:transparent;
+    -fx-alignment:center_left;
+    -fx-padding: 0 0 0 15;
+}
+
+#tableAlg .table-column .label{
+    -fx-text-fill: #61718B;
+    -fx-font-weight:bold;
+    -fx-font-size:14px;
+    -fx-alignment:center_left;
+}
+
+#tableAlg .table-row-cell:odd{
+    -fx-background-color: -fx-table-cell-border-color, #EFF3F7;
+}
+
+#tableAlg .table-row-cell:selected {
+   -fx-background-color: #4089DF;
+}
+
+#tableAlg .table-row-cell:selected .text {
+    -fx-fill: white;
+}
+
+#tableAlg > .virtual-flow > .scroll-bar:vertical,
+#tableAlg > .virtual-flow > .scroll-bar:horizontal{
+    -fx-padding:-12;
+}
+
+#tableAlg > .virtual-flow > .scroll-bar:vertical,
+#tableAlg > .virtual-flow > .scroll-bar:vertical > .track,
+#tableAlg > .virtual-flow > .scroll-bar:vertical > .track-background,
+#tableAlg > .virtual-flow > .scroll-bar:horizontal,
+#tableAlg > .virtual-flow > .scroll-bar:horizontal > .track,
+#tableAlg > .virtual-flow > .scroll-bar:horizontal > .track-background {
+    -fx-background-color: transparent;
+    visibility: hidden;
+}
+
+#tableAlg > .virtual-flow > .scroll-bar:vertical > .thumb,
+#tableAlg > .virtual-flow > .scroll-bar:horizontal > .thumb
+{
+    visibility: true;
+    -fx-background-color:#B3B9BF;
+    -fx-background-radius: 15;
+}
+
+#tableAlg > .virtual-flow > .scroll-bar > .increment-button,
+#tableAlg > .virtual-flow > .scroll-bar > .decrement-button {
+    -fx-opacity: 0;
+}
+
+---------------------*/
+
+/* Remove spacing */
+.pagination > .pagination-control > .control-box {
+    -fx-spacing: 0;
+}
+
+/* You can control the actual button sizes here */
+.pagination > .pagination-control > .control-box > .number-button,
+.pagination > .pagination-control > .control-box > .bullet-button,
+.pagination > .pagination-control > .control-box > .left-arrow-button,
+.pagination > .pagination-control > .control-box > .right-arrow-button {
+    -fx-background-insets: 0, 1;
+    -fx-background-color: lightgray, #FAFAFA;
+    -fx-min-width: 30;
+    -fx-min-height: 30;
+}
+
+/* Colors on hover */
+.pagination > .pagination-control > .control-box > .number-button:hover,
+.pagination > .pagination-control > .control-box > .bullet-button:hover,
+.pagination > .pagination-control > .control-box > .left-arrow-button:hover,
+.pagination > .pagination-control > .control-box > .right-arrow-button:hover {
+    -fx-background-insets: 0;
+    -fx-background-color: lightgray;
+}
+
+/* Selected toggle color */
+.pagination > .pagination-control > .control-box > .number-button:selected,
+.pagination > .pagination-control > .control-box > .bullet-button:selected{
+    -fx-background-insets: 0;
+    -fx-background-color: #58379A;
+    -fx-text-fill: white;
+}

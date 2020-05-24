@@ -1,0 +1,78 @@
+/*
+ * @author 강인경
+ * @since 2020-02-03
+ *
+ * [ID 안내]
+ *
+ * subFrameAdminBoardInsert : AnchorPane
+ * comboBoardList : 게시글 카테고리를 선택할 수 있는 ComboBox
+ * tfTitle : 제목의 내용을 작성하는 Text Field
+ * taCont : 게시글의 내용을 작성하는 Text Area 
+ * btnBoardList : '게시글 목록' Button
+ * btnBoardInsert : '게시글 등록' Button
+ *
+ */
+
+#subFrameAdminBoardInsert{
+	-fx-background-color: #f9f9f9;
+}
+
+#lblMainTitle {
+	-fx-border-color: #f9f9f9;
+	-fx-background-color: #f9f9f9;
+	-fx-font-family: "GODOM";
+	-fx-font-size : 35;
+}
+
+/*---------------------------------*/
+#comboBoardList {
+	-fx-border-color: #3F2B63;
+	-fx-border-radius:5px;
+	-fx-background-color: #f9f9f9;
+	-fx-font-family: "GODOM";
+	-fx-font-size: 14;
+}
+
+#comboBoardList:hover {
+	-fx-cursor: hand;
+/*
+	-fx-border-color: #3F2B63;
+	-fx-background-color: #3F2B63;
+	-fx-text-fill: #f9f9f9;
+	-fx-font-family: "GODOM";
+	-fx-font-size: 13;
+*/
+}
+
+/*---------------------------------*/
+
+#tfTitle, #taCont {
+	-fx-border-color: #3F2B63;
+	-fx-background-color: #f9f9f9;
+	-fx-font-family: "GODOM";
+	-fx-font-size: 15;
+}
+
+#lblWriter, #lblTitle, #lblCont, #Admin {
+	-fx-border-color: #f9f9f9;
+	-fx-background-color: #f9f9f9;
+	-fx-font-family: "GODOM";
+	-fx-font-size: 15;
+}
+
+#btnBoardList, #btnBoardInsert {
+	-fx-border-color: #3F2B63;
+	-fx-background-color: #f9f9f9;
+	-fx-border-radius:5px;
+	-fx-font-family: "GODOM";
+	-fx-font-size: 15;
+}
+
+#btnBoardList:hover, #btnBoardInsert:hover {
+	-fx-border-color: #3F2B63;
+	-fx-background-color: #3F2B63;
+	-fx-font-family: "GODOM";
+	-fx-font-size: 15;
+	-fx-text-fill: #f9f9f9;
+	-fx-cursor:hand;
+}

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Pagination?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="subFrameQuestionList" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="850.0" stylesheets="@css/MEMShowALGList.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.MEMShowALGListController">
+   <children>
+      <VBox fx:id="frameAlgQuestion" alignment="CENTER" prefHeight="600.0" prefWidth="850.0">
+         <children>
+            <Label fx:id="lblTitle" text="알고리즘 문제">
+               <font>
+                  <Font size="35.0" />
+               </font>
+               <padding>
+                  <Insets top="5.0" />
+               </padding>
+            </Label>
+            <ComboBox fx:id="comBoxLv" onAction="#comBomLvClick" prefHeight="30.0" prefWidth="150.0">
+               <VBox.margin>
+                  <Insets bottom="5.0" left="650.0" top="5.0" />
+               </VBox.margin>
+            </ComboBox>
+            <TableView fx:id="tableAlg" maxWidth="800.0" onMouseClicked="#tableAlgClick" prefHeight="428.0" prefWidth="800.0">
+              <columns>
+                <TableColumn fx:id="colSort" prefWidth="100.0" text="분 류" />
+                  <TableColumn fx:id="colQuestion" prefWidth="100.0" text="문제 번호" />
+                  <TableColumn fx:id="colTitle" prefWidth="300.0" text="제목" />
+                  <TableColumn fx:id="colSubmit" prefWidth="100.0" text="제출수" />
+                  <TableColumn fx:id="colMem" prefWidth="100.0" text="정답수" />
+                <TableColumn fx:id="colSuccess" prefWidth="100.0" text="정답률" />
+              </columns>
+               <VBox.margin>
+                  <Insets bottom="5.0" top="5.0" />
+               </VBox.margin>
+            </TableView>
+            <HBox alignment="CENTER" prefHeight="52.0" prefWidth="800.0">
+               <children>
+                  <Pagination fx:id="pageQuestionList" maxPageIndicatorCount="5" prefHeight="30.0" prefWidth="200.0" />
+               </children>
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+            </HBox>
+         </children>
+         <padding>
+            <Insets bottom="10.0" left="25.0" right="25.0" top="25.0" />
+         </padding>
+      </VBox>
+   </children>
+   <padding>
+      <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+   </padding>
+</AnchorPane>

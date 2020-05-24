@@ -1,0 +1,35 @@
+#subFrameLCTbtnModify {
+	-fx-background-color: #f9f9f9;
+	-fx-border-color: gray;
+	-fx-font-family: "GODOM";
+}
+
+#btnMin:hover, #btnClose:hover {
+	-fx-cursor: hand;
+}
+
+#lblTitle {
+	-fx-background-color: #f9f9f9;
+	-fx-border-color: #f9f9f9;
+	-fx-font-family: "GODOM";
+}
+
+#tfTitle, #tfFileUpload { 
+	-fx-background-color: #f9f9f9;
+	-fx-border-color: lightgray;
+	-fx-font-family: "GODOM";
+}
+
+#btnFileUpload {
+	-fx-background-color: #f9f9f9;
+	-fx-border-color: lightgray;
+	-fx-font-family: "GODOM";
+}
+
+#btnFileUpload:hover {
+	-fx-background-color: lightgray;
+	-fx-border-color: lightgray;
+	-fx-font-family: "GODOM";
+	-fx-cursor: hand;
+}
+

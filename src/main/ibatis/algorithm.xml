@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE sqlMap
+	PUBLIC "-//ibatis.apache.org//DTD SQL Map 2.0//EN"
+	"http://ibatis.apache.org/dtd/sql-map-2.dtd">
+<!--알고리즘 -->
+<sqlMap namespace="algorithm">
+
+	<select id="getAlgExe" parameterClass="String" resultClass="main.vo.AlgorithmTableVO">
+		select a.alg_no as alg_no, 
+       		   b.alg_cate as alg_cate, 
+       		   a.alg_title as alg_title, 
+       		   a.alg_sbmt_cnt as alg_submit, 
+       		   a.alg_crct_cnt as alg_crct_cnt 
+  		  from algorithm a, alg_cate b 
+ 		 where a.alg_cate_no = b.alg_cate_no 
+ 		   and b.alg_cate = #alg_cate#
+	</select>
+	
+	<insert id="addALGExer" parameterClass="AlgorithmVO">
+		insert into algorithm 
+		values(alg_seq.nextval, #alg_cate_no#, #lang_no#, #alg_title#, #alg_cont#, #alg_cnt#, #alg_sbmt_cnt#, #alg_crct_cnt#)
+	</insert>
+	
+	<select id="getAllAlgCate" resultClass="AlgCateVO">
+		select *from alg_cate
+	</select>
+	
+</sqlMap>

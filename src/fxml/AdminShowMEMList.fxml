@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Pagination?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane fx:id="subFrameMEM" prefHeight="600.0" prefWidth="850.0" style="-fx-background-color: white;" stylesheets="@css/AdminShowMEMList.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.AdminShowMEMListController">
+   <children>
+      <VBox prefHeight="600.0" prefWidth="850.0">
+         <children>
+            <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <ComboBox fx:id="comboMem" onAction="#memselectCombobox" prefWidth="150.0">
+                     <HBox.margin>
+                        <Insets right="220.0" />
+                     </HBox.margin>
+                  </ComboBox>
+                  <TextField fx:id="tfSearchMem" onAction="#tfSearchMemClick">
+                     <HBox.margin>
+                        <Insets left="100.0" right="10.0" />
+                     </HBox.margin>
+                  </TextField>
+                  <Button fx:id="btnSearch" mnemonicParsing="false" onAction="#btnSearchClick" text="검색" />
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="400.0" prefWidth="200.0">
+               <children>
+                  <TableView fx:id="tableMem" prefHeight="200.0" prefWidth="700.0">
+                    <columns>
+                      <TableColumn fx:id="memId" prefWidth="100.0" text="회원ID" />
+                      <TableColumn fx:id="memName" text="회원이름" />
+                        <TableColumn fx:id="memAddr" prefWidth="240.0" text="주소" />
+                        <TableColumn fx:id="langItrst" prefWidth="100.0" text="관심언어" />
+                        <TableColumn fx:id="langMajor" prefWidth="100.0" text="자신있는언어" />
+                        <TableColumn fx:id="report" text="신고 횟수" />
+                    </columns>
+                  </TableView>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <Pagination fx:id="pagination" prefHeight="200.0" prefWidth="200.0">
+                     <HBox.margin>
+                        <Insets bottom="25.0" left="240.0" right="80.0" />
+                     </HBox.margin>
+                  </Pagination>
+                  <Button fx:id="btnBlkCancel" mnemonicParsing="false" onAction="#btnBlkCancelClick" prefHeight="30.0" prefWidth="132.0" text="블랙리스트 해제">
+                     <HBox.margin>
+                        <Insets bottom="30.0" left="50.0" />
+                     </HBox.margin>
+                  </Button>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE sqlMap
+	PUBLIC "-//ibatis.apache.org//DTD SQL Map 2.0//EN"
+	"http://ibatis.apache.org/dtd/sql-map-2.dtd">
+<!--강의(동영상강의) -->
+<!-- 	parameterClass:외부에서 데이터를 가져와서 쿼리문에 넣을때 
+select일때는 resultclass는 select문이 실행된 결과를 넣는 객체 -->
+<!-- resultClass="board.vo.JbdcBoardVO" xml에다가 typeAlias를 선언 해놓으면
+그 이름을 써먹을수 있다. 
+ resultClass:안에 있는걸 밖으로 빼주는 거
+ parameterClass:외부에 있는걸 안으로 넣어주는거
+ -->
+<sqlMap namespace="lecture">
+<select id="getALLlectureList" resultClass="MEMShowMYLCTVO" parameterClass="String">
+	select a.LCT_NAME,
+	       a.LCT_UPLOAD_DATE,
+	       a.LCT_CONT,
+	       a.LCT_PRICE,
+	       b.LCT_IMG_SNAME, 
+	       b.LCT_NO
+	from LECTURE a,lct_prof_file b 
+	where a.LCT_NO=b.LCT_NO 
+	and mem_id=#mem_id#
+</select>
+
+
+<insert id="insertfreelecture" parameterClass="LectureVO">
+	<selectKey resultClass="int" keyProperty="lct_no">
+		select lct_seq.nextval from dual
+	</selectKey> 
+	insert into LECTURE(lct_no,lct_name,lct_cont,mem_id,lang_no,lct_status,lct_price,lct_upload_date)
+	values(#lct_no#, #lct_name#, #lct_cont#, #mem_id#, #lang_no#, #lct_status#, #lct_price# ,sysdate)
+</insert>
+
+<update id="updatelecture" parameterClass="lectureVO">
+update lecture set
+		lct_name=#lct_name#,
+		lct_cont=#lct_cont#
+		where lct_no = #lct_no#		
+</update>
+
+<update id="updateimg" parameterClass="LctProfFileVO">
+update LCT_PROF_FILE set
+		lct_img_sname=#lct_img_sname#
+		where lct_no=#lct_no#
+</update>
+
+<insert id="insertimg" parameterClass="LctProfFileVO">
+	insert into LCT_PROF_FILE(lct_img_no, lct_no, lct_img_name, lct_img_sname, lct_img_size, lct_img_date) 
+	values(lct_img_seq.nextval, #lct_no#, #lct_img_name#, #lct_img_sname#, #lct_img_size#, sysdate)
+</insert>
+<!-- 	한줄 전체를 가져올것이면 vo 그냥 int로 번호 하나를 입력받을 것이면 int -->
+<!-- 이미지 삭제 -->
+<!-- <delete id="deleteimgfile" parameterClass="int">  -->
+<!-- delete from LCT_PROF_FILE where lct_no=#lct_no#; -->
+<!-- </delete>  -->
+
+<select id="getpaidmem" resultClass="int" parameterClass="string">
+select count(*)
+from paid_mem
+where mem_id=#mem_id# 
+</select>
+
+<!-- 유료강의 등록 -->
+<insert id="insertpaylecture" parameterClass="LectureVO">
+	<selectKey resultClass="int" keyProperty="lct_no">
+		select lct_seq.nextval from dual
+	</selectKey>
+	insert into LECTURE(lct_no,lct_name,lct_cont,mem_id,lang_no,lct_status,lct_price,lct_upload_date,lct_permit_date)
+	values(#lct_no#, #lct_name#, #lct_cont#, #mem_id#, #lang_no#, #lct_status#, #lct_price# ,sysdate, #lct_permit_date#)
+</insert>
+
+<delete id="deletelecture" parameterClass="int">
+delete from lct_prof_file where lct_no=#lct_no#
+</delete>
+
+<!-- 동영상 리스트 보여주기 -->
+<select id="getallvideolist" resultClass="ContentsCttGBVO" parameterClass="int">
+    select * 
+	from contents a,ctt_gb b 
+	where a.ctt_gb_no=b.ctt_gb_no 
+   and lct_no=#lct_no# 
+</select>
+
+
+
+
+
+
+</sqlMap>

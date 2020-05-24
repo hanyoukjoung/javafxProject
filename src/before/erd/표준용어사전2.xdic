@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<tm:TermDictionary xmlns:tm="http://exerd.com/term-model" version="1.1">
+  <term name="회원" description="서비스 이용자" physicalName="MEM" physicalDescription="Service Client"/>
+  <term name="명" description="사물의 이름" physicalName="NAME" physicalDescription="Object's Name"/>
+  <term name="아이디" description="아이디" physicalName="ID" physicalDescription="Identification"/>
+  <term name="제목" description="사물의 제목" physicalName="TITLE" physicalDescription="Object's Title"/>
+  <term name="패스워드" description="비밀번호" physicalName="PW" physicalDescription="Password"/>
+  <term name="연락처" description="연락 가능한 전화번호" physicalName="TEL" physicalDescription="Contectable Phone Number"/>
+  <term name="내용" description="글의 내용" physicalName="CONT" physicalDescription="Board's Content"/>
+  <term name="번호" description="사물의 번호" physicalName="NO" physicalDescription="Object's Number"/>
+  <term name="이미지" description="사물의 사진" physicalName="IMG" physicalDescription="Object's Image / Picture / etc"/>
+  <term name="날짜" description="특정 시점의 연/월/일 시/분/초" physicalName="DATE" physicalDescription="Date"/>
+  <term name="식별번호" description="인조키" physicalName="NO" physicalDescription="Artificial Key"/>
+  <term name="파일" description="파일" physicalName="FILE" physicalDescription="File"/>
+  <term name="작성" description="게시글을 적는 행위" physicalName="WRITE" physicalDescription="Making Board"/>
+  <term name="이메일" description="전자메일 주소" physicalName="EMAIL" physicalDescription="Internet Mail Address"/>
+  <term name="주민등록번호" description="국민에게 부여된 고유식별번호" physicalName="REGNO" physicalDescription="Resident Registration Number"/>
+  <term name="주소" description="사물의 위치" physicalName="ADDR" physicalDescription="Object's Location"/>
+  <term name="상세" description="자세한" physicalName="DTL" physicalDescription="Detail"/>
+  <term name="점수" description="회원의 점수" physicalName="POINT" physicalDescription="Member's Point"/>
+  <term name="등급" description="점수 기준 등급" physicalName="GRADE" physicalDescription="Grade"/>
+  <term name="프로필" description="회원의 소개" physicalName="PROF" physicalDescription="Member's Introduction"/>
+  <term name="유료자격" description="제공에 대한 대가를 받을 자격" physicalName="PAID" physicalDescription="A Charge Qualification"/>
+  <term name="여부" description="논리" physicalName="YN" physicalDescription="Yes / No"/>
+  <term name="언어" description="언어" physicalName="LANG" physicalDescription="Language"/>
+  <term name="전공" description="전공" physicalName="MAJOR" physicalDescription="Major"/>
+  <term name="관심" description="관심" physicalName="ITRST" physicalDescription="Member's Interested in Language"/>
+  <term name="활성화" description="사물의 사용 여부" physicalName="ACT" physicalDescription="Object's Activation Yes or No"/>
+  <term name="시작" description="시작" physicalName="START" physicalDescription="Start"/>
+  <term name="자기소개" description="회원의 자기소개" physicalName="INTROD" physicalDescription="Self Introduction"/>
+  <term name="평점" description="특정 대상에 대한 평가 점수" physicalName="STAR" physicalDescription="Score about target"/>
+  <term name="부여" description="권한을 부여하다" physicalName="AUTH" physicalDescription="Authorized"/>
+  <term name="은행" description="은행" physicalName="BANK" physicalDescription="Bank"/>
+  <term name="계좌" description="은행 계좌번호" physicalName="ACC" physicalDescription="Bank's Account"/>
+  <term name="스케줄" description="일정" physicalName="SCHE" physicalDescription="Schedule"/>
+  <term name="대상" description="대상" physicalName="TARGET" physicalDescription="Target"/>
+  <term name="작성자" description="글의 작성자" physicalName="WRITER" physicalDescription="Board's Writer"/>
+  <term name="금액" description="거래금액" physicalName="AMT" physicalDescription="Amount"/>
+  <term name="거래" description="거래" physicalName="TRADE" physicalDescription="Trade"/>
+  <term name="처리" description="발생된 일에 대한 처리" physicalName="PROC" physicalDescription="Processing"/>
+  <term name="인증" description="인증" physicalName="CERT" physicalDescription="Certification"/>
+  <term name="레슨" description="레슨" physicalName="LSN" physicalDescription="Lesson"/>
+  <term name="조회수" description="게시글의 조회 수" physicalName="CNT" physicalDescription="Board's Viewed Count"/>
+  <term name="카테고리" description="카테고리" physicalName="CATE" physicalDescription="Category"/>
+  <term name="쪽지" description="쪽지" physicalName="MSG" physicalDescription="Message"/>
+  <term name="발신" description="출발" physicalName="SND" physicalDescription="Send"/>
+  <term name="수신" description="도착" physicalName="RCV" physicalDescription="Receive"/>
+  <term name="수강료" description="강의의 수강료" physicalName="PRICE" physicalDescription="Course's Price"/>
+  <term name="블랙리스트" description="차단 회원 목록" physicalName="BLK" physicalDescription="BlackList"/>
+  <term name="신고" description="컨텐츠/회원에 대한 신고" physicalName="RPT" physicalDescription="Report about Contents / Member"/>
+  <term name="채팅" description="채팅" physicalName="CHAT" physicalDescription="Chatting"/>
+  <term name="리스트" description="목록" physicalName="LIST" physicalDescription="List"/>
+  <term name="코딩" description="프로그래밍 언어로 이루어진 문자열" physicalName="CORD" physicalDescription="String consist of Programming Language"/>
+  <term name="종료" description="종료" physicalName="END" physicalDescription="END"/>
+  <term name="일" description="특정 시점의 연/월/일 시/분/초" physicalName="DATE" physicalDescription="Date"/>
+  <term name="일자" description="특정 시점의 연/월/일 시/분/초" physicalName="DATE" physicalDescription="Date"/>
+  <term name="알고리즘" description="알고리즘" physicalName="ALG" physicalDescription="Algorithm"/>
+  <term name="비고" description="비고" physicalName="NOTE" physicalDescription="Note"/>
+  <term name="과제" description="과제" physicalName="TASK" physicalDescription="Task"/>
+  <term name="강의" description="강의" physicalName="LCT" physicalDescription="Lecture"/>
+  <term name="업로드" description="업로드" physicalName="UPLOAD" physicalDescription="Upload"/>
+  <term name="유료" description="유료" physicalName="PAID" physicalDescription="Paid"/>
+  <term name="이력" description="이력" physicalName="REC" physicalDescription="Record"/>
+  <term name="영상" description="강의별 동영상" physicalName="VIDEO" physicalDescription="VIDEO"/>
+  <term name="댓글" description="댓글" physicalName="CMNT" physicalDescription="Comment"/>
+  <term name="사유" description="사유" physicalName="REASON" physicalDescription="Reason"/>
+  <term name="제출" description="제출" physicalName="SBMT" physicalDescription="Submit"/>
+  <term name="정답" description="정답" physicalName="CRCT" physicalDescription="Correct"/>
+  <term name="도움말" description="도움말" physicalName="ADV" physicalDescription="Advice"/>
+  <term name="태그" description="태그" physicalName="TAG" physicalDescription="Tag"/>
+  <term name="상태" description="상태" physicalName="STATUS" physicalDescription="STATUS"/>
+  <term name="승인" description="승인" physicalName="PERMIT" physicalDescription="Permit"/>
+  <term name="구독" description="구독" physicalName="SUBS" physicalDescription="Subscription"/>
+  <term name="수" description="수" physicalName="CNT" physicalDescription="Count"/>
+  <term name="방" description="방" physicalName="ROOM" physicalDescription="Room"/>
+  <term name="참여" description="참여" physicalName="PTCP" physicalDescription="Participation"/>
+  <term name="코드" description="프로그래밍 언어로 된 문자열" physicalName="CORD" physicalDescription="String consist of Programming Language"/>
+  <term name="변동" description="변동" physicalName="CHG" physicalDescription="Change"/>
+  <term name="평가" description="평가" physicalName="EVAL" physicalDescription="Evaluation"/>
+  <term name="게시판" description="게시판" physicalName="BOARD" physicalDescription="Board"/>
+  <term name="문제" description="문제" physicalName="EXER" physicalDescription="Exercise"/>
+  <term name="관리" description="관리" physicalName="GWANRI" physicalDescription="Superintendence"/>
+  <term name="일련" description="일련" physicalName="ILRYEON" physicalDescription="Serial"/>
+  <term name="법정" description="법정" physicalName="BJ" physicalDescription="Law Court"/>
+  <term name="구" description="구" physicalName="GOO" physicalDescription="Borough"/>
+  <term name="동" description="동" physicalName="DONG" physicalDescription="Dong"/>
+  <term name="시" description="시" physicalName="SI" physicalDescription="Municipality"/>
+  <term name="군" description="군" physicalName="GUN" physicalDescription="Gun"/>
+  <term name="도" description="도" physicalName="DO" physicalDescription="Province"/>
+  <term name="리" description="리" physicalName="LEE" physicalDescription="li"/>
+  <term name="읍" description="읍" physicalName="EUP" physicalDescription="Town"/>
+  <term name="면" description="면" physicalName="MYEON" physicalDescription="Side"/>
+  <term name="산" description="산" physicalName="MOUNTAIN" physicalDescription="Mountain"/>
+  <term name="지번" description="지번" physicalName="JIBUN" physicalDescription="Parcel Number"/>
+  <term name="본번" description="본번" physicalName="BONBUN" physicalDescription="Main Num"/>
+  <term name="부번" description="부번" physicalName="BOOBUN" physicalDescription="Serve Num"/>
+  <term name="읍면동" description="읍면동" physicalName="EMD" physicalDescription="Eup Myeon Dong"/>
+  <term name="도로명주소" description="도로명 주소" physicalName="RNA" physicalDescription="The Road Name Address"/>
+  <term name="대표" description="대표" physicalName="REP" physicalDescription="Representative"/>
+  <term name="고시" description="고시" physicalName="GOSI" physicalDescription="Notification"/>
+  <term name="변경" description="변경" physicalName="CHG" physicalDescription="Change"/>
+  <term name="전" description="전" physicalName="BEFORE" physicalDescription="Before"/>
+  <term name="도로명" description="도로명" physicalName="RNA" physicalDescription="The Road Name (Address)"/>
+  <term name="지하" description="지하" physicalName="BASEMENT" physicalDescription="Basement"/>
+  <term name="건물" description="건물" physicalName="BUILDING" physicalDescription="Building"/>
+  <term name="기초" description="기초" physicalName="GICHO" physicalDescription="Basic"/>
+  <term name="구역" description="구역" physicalName="AREA" physicalDescription="AREA"/>
+  <term name="우편" description="우편" physicalName="POST" physicalDescription="Post"/>
+  <term name="다량배달처" description="다량 배달처" physicalName="GQD" physicalDescription="The Great Quantity Destination"/>
+  <term name="건축물대장" description="건축물 대장" physicalName="BREG" physicalDescription="Building Register"/>
+  <term name="공동주택" description="아파트" physicalName="APT" physicalDescription="Apartment"/>
+  <term name="로마자" description="로마자" physicalName="ENG" physicalDescription="English"/>
+  <term name="사용" description="사용" physicalName="USE" physicalDescription="Use"/>
+  <term name="정보" description="정보" physicalName="INFO" physicalDescription="Infomation"/>
+  <term name="말소" description="말소" physicalName="MALSO" physicalDescription="Erasure"/>
+  <term name="행정" description="행정" physicalName="HANGJUNG" physicalDescription="Administration"/>
+  <term name="구분" description="구분" physicalName="DIV" physicalDescription="Division"/>
+  <term name="가입" description="가입" physicalName="JOIN" physicalDescription="Join"/>
+  <term name="관리자" description="관리자" physicalName="ADMIN" physicalDescription="Administrator"/>
+  <term name="카드" description="카드" physicalName="CARD" physicalDescription="Card"/>
+  <term name="사" description="社" physicalName="CORP" physicalDescription="Corporation"/>
+  <term name="기준" description="기준" physicalName="STD" physicalDescription="Standard"/>
+  <term name="소유주" description="소유주" physicalName="OWNER" physicalDescription="Owner"/>
+  <term name="기본" description="기본" physicalName="BASIC" physicalDescription="Basic"/>
+  <term name="해답" description="해답" physicalName="SOL" physicalDescription="Solution"/>
+  <term name="대댓글" description="대댓글" physicalName="REPLY" physicalDescription="Reply"/>
+  <term name="저장명" description="저장명" physicalName="SNAME" physicalDescription="Save NAME"/>
+</tm:TermDictionary>

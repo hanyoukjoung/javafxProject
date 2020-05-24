@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane fx:id="subFrameAddLCT" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="850.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.MEMaddLCTController">
+   <children>
+      <VBox prefHeight="600.0" prefWidth="850.0">
+         <children>
+            <HBox prefHeight="550.0" prefWidth="850.0">
+               <children>
+                  <TableView fx:id="tableAddLCT" onMouseClicked="#stdTableClicked" prefHeight="547.0" prefWidth="854.0">
+                    <columns>
+                      <TableColumn fx:id="colCate" prefWidth="115.0" text="분류" />
+                      <TableColumn fx:id="colTitle" prefWidth="160.0" text="주제" />
+                        <TableColumn fx:id="colCont" prefWidth="525.0" text="설명" />
+                    </columns>
+                     <HBox.margin>
+                        <Insets left="25.0" right="25.0" top="25.0" />
+                     </HBox.margin>
+                  </TableView>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER_RIGHT" prefHeight="56.0" prefWidth="850.0">
+               <children>
+                  <Button fx:id="btnInsert" mnemonicParsing="false" onAction="#btnInsertClick" prefHeight="30.0" prefWidth="65.0" text="추가">
+                     <HBox.margin>
+                        <Insets right="10.0" />
+                     </HBox.margin>
+                  </Button>
+                  <Button fx:id="btnModify" mnemonicParsing="false" onAction="#btnModifyClick" prefHeight="30.0" prefWidth="65.0" text="수정">
+                     <HBox.margin>
+                        <Insets right="10.0" />
+                     </HBox.margin>
+                  </Button>
+                  <Button fx:id="btnDel" mnemonicParsing="false" onAction="#btnDelClick" prefHeight="30.0" prefWidth="65.0" text="삭제">
+                     <HBox.margin>
+                        <Insets right="10.0" />
+                     </HBox.margin>
+                  </Button>
+               </children>
+               <VBox.margin>
+                  <Insets right="15.0" />
+               </VBox.margin>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

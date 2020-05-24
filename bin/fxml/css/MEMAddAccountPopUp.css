@@ -1,0 +1,77 @@
+/*
+ * @author 강인경
+ * @since 2020-02-03
+ *
+ * [ID 안내]
+ * 
+ * popUpFrame : AnchorPane
+ * btnMin : 최소화 Button
+ * btnClose : 닫기 Button
+ * comboBank : 은행명 선택이 가능한 ComboBox
+ * tfAccount : 계좌번호를 작성하는 Text Field
+ * btnConfirm : 확인 Button
+ *
+ */
+
+#popUpFrame { 
+	-fx-border-color: #3f2b63;
+	-fx-background-color: #f9f9f9;
+}
+
+#btnMin, #btnClose { 
+	-fx-border-color: #f9f9f9;
+	-fx-background-color: #f9f9f9;
+	-fx-font-family: "GODOM";
+	-fx-font-size: 12;
+}
+
+#btnMin:hover, #btnClose:hover {
+	-fx-border-color: #f9f9f9;
+	-fx-background-color: #f9f9f9;
+	-fx-font-family: "GODOM";
+	-fx-font-size: 12;
+	-fx-text-fill: #3f2b63;
+	-fx-cursor:hand;
+}
+
+#lblText1, #lblText2 {
+	-fx-border-color: #f9f9f9;
+	-fx-background-color: #f9f9f9;
+	-fx-font-family: "GODOM";
+	-fx-font-size: 18;
+}
+
+#comboBank {
+	-fx-border-color: #3f2b63;
+	-fx-background-color: #f9f9f9;
+	-fx-font-size: 12;
+	-fx-font-family: "GODOM";
+}
+
+#comboBank:hover {
+	-fx-cursor:hand;
+}
+
+#tfAccount {
+	-fx-border-color: #3f2b63;
+	-fx-background-color: #f9f9f9;
+	-fx-font-size: 13;
+	-fx-font-family: "GODOM";
+}
+
+#btnConfirm { 
+	-fx-border-color: #3f2b63;
+	-fx-background-color: #f9f9f9;
+	-fx-text-fill: #3f2b63;
+	-fx-font-family: "GODOM";
+	-fx-font-size: 15;
+}
+
+#btnConfirm:hover {
+	-fx-border-color: #3f2b63;
+	-fx-background-color: #3f2b63;
+	-fx-font-family: "GODOM";
+	-fx-font-size: 15;
+	-fx-text-fill: #f9f9f9;
+	-fx-cursor:hand;
+}

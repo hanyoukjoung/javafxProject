@@ -1,0 +1,28 @@
+#Frame {
+	-fx-background-color: #f9f9f9;
+	-fx-border-color: lightgray;
+	-fx-font-family: "GODOM";
+}
+
+#lblTitle {
+	-fx-font-family: "GODOM";
+	-fx-font-size: 18;
+}
+
+#rpt_cate, #btnCancel, #btnRPTConfirm {
+	-fx-background-color: #f9f9f9;
+	-fx-border-color: lightgray;
+	-fx-font-size: 15;
+}
+
+#rpt_cate:hover, #btnCancel:hover, #btnRPTConfirm:hover {
+	-fx-background-color: lightgray;
+	-fx-border-color: lightgray;
+	-fx-cursor: hand;
+}
+
+#rpt_cont {
+	-fx-background-color: #f9f9f9;
+	-fx-border-color: lightgray;
+	-fx-font-size: 13;
+}

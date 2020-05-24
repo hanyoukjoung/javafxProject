@@ -1,0 +1,37 @@
+/* 
+ * @author 강인경
+ * @since 2020-02-03
+ *
+ * [ID 안내]
+ * 
+ * PLCTFrame : AnchorPane
+ * tablePLct : 유료 강의 신청 승인/반려 Table
+ * lct_name : 강의명 컬럼(열)
+ * lct_mem_id : 회원아이디 컬럼(열)
+ * permit : 신청승인 컬럼(열)
+ * sendBack : 신청반려 컬럼(열) (기존의 ID : companion에서 sendBack으로 변경했으니 참고해주세요)
+ *
+ */
+
+#PLCTFrame{
+	-fx-background-color: #f9f9f9;
+}
+
+#lblMainTitle {
+	-fx-background-color: #f9f9f9;
+	-fx-font-family: "GODOM";
+	-fx-font-size: 35;
+}
+
+#tablePLct {
+	-fx-background-color: #f9f9f9;
+	-fx-border-color: #3f2b63;
+	-fx-font-family: "GODOM";
+	-fx-font-size: 15;
+}
+
+#lct_name, #lct_mem_id, #permit, #sendBack {
+	-fx-background-color: #f9f9f9;
+	-fx-font-family: "GODOM";
+	-fx-font-size: 12;
+}

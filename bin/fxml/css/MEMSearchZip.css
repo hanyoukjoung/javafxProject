@@ -1,0 +1,18 @@
+#btnSearch{
+	-fx-background-color:f9f9f9;
+	-fx-border-color:#3f2b63;
+	-fx-border-radius:5px;
+}
+#btnSearch:hover{
+	-fx-border-color:#cca0ff;
+	-fx-background-color:#cca0ff;
+	-fx-cursor:hand;
+}
+#pane{
+/* 	-fx-background-image:url("../z.source/computer.jpg"); */
+	-fx-border-color:#3f2b63;
+	-fx-border-width:2px;
+}
+#lblTitle{
+	-fx-font-size:13pt;
+}

@@ -1,0 +1,28 @@
+#frame {
+	-fx-background-color: #f9f9f9;
+}
+
+#lblText {
+	-fx-font-family: "tvN 즐거운이야기 Medium";
+	-fx-font-size: 70;
+}
+
+#btnSend {
+	-fx-font-family: "tvN 즐거운이야기 Medium";
+	-fx-font-size: 40;
+	-fx-background-color: #84bacf;
+	-fx-border-color: #84bacf;
+	-fx-text-fill: #f9f9f9;
+}
+
+#btnSend:hover {
+	-fx-cursor: hand;
+}
+
+#lblSend {
+	-fx-font-family: "tvN 즐거운이야기 Medium";
+	-fx-font-size: 30;
+	-fx-background-color: #f9f9f9;
+	-fx-border-color: #f9f9f9;
+	-fx-text-fill: black;
+}

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE sqlMap
+	PUBLIC "-//ibatis.apache.org//DTD SQL Map 2.0//EN"
+	"http://ibatis.apache.org/dtd/sql-map-2.dtd">
+<sqlMap namespace="comment">
+	<insert id="insertFBoardComment" parameterClass="FboardCmntVO">
+		INSERT INTO FBOARD_CMNT (CMNT_NO, FREE_BOARD_NO, CMNT_REPLY_YN, CMNT_CONT, MEM_ID, CMNT_DATE)
+			VALUES(FREE_CMNT_SEQ.NEXTVAL, #free_board_no#, #cmnt_reply_yn#, #cmnt_cont#, #mem_id#, sysdate)
+	</insert>
+	<select id="getAllFBoardCmntList" parameterClass="int" resultClass="FboardCmntVO">
+		SELECT CMNT_NO, CMNT_CONT, TO_CHAR(CMNT_DATE, 'YYYY-MM-DD') AS CMNT_DATE, MEM_ID  
+		FROM   FBOARD_CMNT 
+		WHERE  FREE_BOARD_NO = #free_board_no# 
+		AND    CMNT_REPLY_YN = 'N' 
+		ORDER  BY CMNT_NO 
+	</select>
+	<update id="updateFBoardCommnet" parameterClass="FboardCmntVO">
+		UPDATE FBOARD_CMNT 
+		SET    CMNT_CONT = #cmnt_cont# 
+		WHERE  CMNT_NO = #cmnt_no# 
+	</update>
+	<update id="deleteFBoardCommnet" parameterClass="int">
+		DELETE FROM FBOARD_CMNT 
+		WHERE       CMNT_NO = #cmnt_no# 
+	</update>
+	<insert id="insertFBoardCommentComment" parameterClass="FboardCmntVO">
+		INSERT INTO FBOARD_CMNT 
+			VALUES(FREE_CMNT_SEQ.NEXTVAL, #free_board_no#, #cmnt_target#, #cmnt_reply_yn#, #cmnt_cont#, #mem_id#, sysdate)
+	</insert>
+	<select id="getAllFBoardCmntCmntList" parameterClass="map" resultClass="FboardCmntVO">
+		SELECT CMNT_NO, CMNT_TARGET, CMNT_CONT, TO_CHAR(CMNT_DATE, 'YYYY-MM-DD') AS CMNT_DATE, MEM_ID  
+		FROM   FBOARD_CMNT 
+		WHERE  FREE_BOARD_NO = #free_board_no# 
+		AND    CMNT_REPLY_YN = 'Y' 
+		AND    CMNT_TARGET = #cmnt_target# 
+		ORDER  BY CMNT_NO 
+	</select>
+</sqlMap>	

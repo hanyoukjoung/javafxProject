@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Text?>
+<?import javafx.scene.text.TextFlow?>
+
+<AnchorPane fx:id="pane" prefHeight="400.0" prefWidth="600.0" stylesheets="@../fxml/css/MEMShowLSNDetailPopUp.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.MEMShowLSNDetailController">
+   <children>
+      <GridPane layoutX="25.0" layoutY="25.0" prefHeight="350.0" prefWidth="550.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="274.0" minWidth="10.0" prefWidth="140.0" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="417.0" minWidth="10.0" prefWidth="417.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints maxHeight="50.0" minHeight="10.0" prefHeight="50.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="50.0" minHeight="10.0" prefHeight="50.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="50.0" minHeight="10.0" prefHeight="50.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="50.0" minHeight="10.0" prefHeight="50.0" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="120.0" minHeight="10.0" prefHeight="114.0" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="40.0" minHeight="10.0" prefHeight="40.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <HBox alignment="CENTER_RIGHT" prefHeight="100.0" prefWidth="200.0">
+               <GridPane.margin>
+                  <Insets />
+               </GridPane.margin>
+               <children>
+                  <Label style="-fx-text-fill: #ffffff;" text="작성자 아이디 : ">
+                     <HBox.margin>
+                        <Insets bottom="5.0" left="10.0" />
+                     </HBox.margin>
+                  </Label>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER_RIGHT" prefHeight="100.0" prefWidth="200.0" GridPane.rowIndex="1">
+               <GridPane.margin>
+                  <Insets />
+               </GridPane.margin>
+               <children>
+                  <Label style="-fx-text-fill: #ffffff;" text="작성 일자 : ">
+                     <HBox.margin>
+                        <Insets bottom="5.0" left="10.0" />
+                     </HBox.margin>
+                  </Label>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER_RIGHT" prefHeight="100.0" prefWidth="200.0" GridPane.rowIndex="2">
+               <GridPane.margin>
+                  <Insets />
+               </GridPane.margin>
+               <children>
+                  <Label style="-fx-text-fill: #ffffff;" text="가르칠 수 있는 언어 : ">
+                     <HBox.margin>
+                        <Insets bottom="5.0" left="10.0" />
+                     </HBox.margin>
+                  </Label>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER_RIGHT" prefHeight="100.0" prefWidth="200.0" GridPane.rowIndex="3">
+               <GridPane.margin>
+                  <Insets />
+               </GridPane.margin>
+               <children>
+                  <Label style="-fx-text-fill: #ffffff;" text="배우고 싶은 언어 : ">
+                     <HBox.margin>
+                        <Insets bottom="5.0" left="10.0" />
+                     </HBox.margin>
+                  </Label>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER_RIGHT" prefHeight="114.0" prefWidth="120.0" GridPane.rowIndex="4">
+               <GridPane.margin>
+                  <Insets />
+               </GridPane.margin>
+               <children>
+                  <Label style="-fx-text-fill: #ffffff;" text="내 용 : ">
+                     <HBox.margin>
+                        <Insets left="10.0" />
+                     </HBox.margin>
+                  </Label>
+               </children>
+            </HBox>
+            <HBox fx:id="HBox1" alignment="CENTER_LEFT" prefHeight="37.0" prefWidth="413.0" style="-fx-background-color: f9f9f9;" GridPane.columnIndex="1">
+               <GridPane.margin>
+                  <Insets bottom="5.0" />
+               </GridPane.margin>
+               <children>
+                  <Label fx:id="lblWriter">
+                     <padding>
+                        <Insets left="10.0" />
+                     </padding>
+                  </Label>
+               </children>
+            </HBox>
+            <HBox fx:id="HBox2" alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="200.0" style="-fx-background-color: f9f9f9;" GridPane.columnIndex="1" GridPane.rowIndex="1">
+               <GridPane.margin>
+                  <Insets bottom="5.0" />
+               </GridPane.margin>
+               <children>
+                  <Label fx:id="lblDate">
+                     <padding>
+                        <Insets left="10.0" />
+                     </padding>
+                  </Label>
+               </children>
+            </HBox>
+            <HBox fx:id="HBox3" alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="200.0" style="-fx-background-color: f9f9f9;" GridPane.columnIndex="1" GridPane.rowIndex="2">
+               <GridPane.margin>
+                  <Insets bottom="5.0" />
+               </GridPane.margin>
+               <children>
+                  <Label fx:id="lblTeachLang">
+                     <padding>
+                        <Insets left="10.0" />
+                     </padding>
+                  </Label>
+               </children>
+            </HBox>
+            <HBox fx:id="HBox4" alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="200.0" style="-fx-background-color: f9f9f9;" GridPane.columnIndex="1" GridPane.rowIndex="3">
+               <GridPane.margin>
+                  <Insets bottom="5.0" />
+               </GridPane.margin>
+               <children>
+                  <Label fx:id="lblLearnLang">
+                     <padding>
+                        <Insets left="10.0" />
+                     </padding>
+                  </Label>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER_LEFT" prefHeight="110.0" prefWidth="435.0" style="-fx-background-color: white; -fx-background-radius: 10;" GridPane.columnIndex="1" GridPane.rowIndex="4">
+               <GridPane.margin>
+                  <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+               </GridPane.margin>
+               <children>
+                  <TextFlow fx:id="tflow" prefHeight="110.0" prefWidth="425.0" style="-fx-background-color: f9f9f9;">
+                     <children>
+                        <Text fx:id="txtContent" strokeType="OUTSIDE" strokeWidth="0.0" />
+                     </children>
+                     <HBox.margin>
+                        <Insets />
+                     </HBox.margin>
+                  </TextFlow>
+               </children>
+            </HBox>
+            <AnchorPane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="5">
+               <children>
+                  <Button fx:id="btnRequest" layoutX="325.0" layoutY="8.0" mnemonicParsing="false" onAction="#btnRequestClick" prefHeight="25.0" prefWidth="85.0" text="신청하기" />
+               </children>
+               <GridPane.margin>
+                  <Insets />
+               </GridPane.margin>
+            </AnchorPane>
+         </children>
+      </GridPane>
+      <ImageView fx:id="btnClose" fitHeight="15.0" fitWidth="15.0" onMouseClicked="#btnCloseClick" pickOnBounds="true" preserveRatio="true" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <image>
+            <Image url="@../z.source/close.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="btnMin" fitHeight="15.0" fitWidth="15.0" layoutX="10.0" layoutY="10.0" onMouseClicked="#btnMinClick" pickOnBounds="true" preserveRatio="true" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="0.0">
+         <image>
+            <Image url="@../z.source/minu.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

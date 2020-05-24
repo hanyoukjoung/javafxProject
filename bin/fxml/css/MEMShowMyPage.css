@@ -1,0 +1,27 @@
+#btnConfirm, #btnCancel, #btnModify{
+	-fx-border-color:gray;
+	-fx-background-color:f9f9f9;
+}
+#btnConfirm:hover, #btnCancel:hover, #btnModify:hover{
+	-fx-background-color:gray;
+	-fx-border-color:gray;
+	-fx-text-fill:#ffffff;
+	-fx-cursor:hand;
+}
+
+#subFrameMyPage{
+	/*-fx-background-image : url("../../z.source/snow.jpg");*/
+	-fx-background-color: #f9f9f9;
+	-fx-font-family: "GODOM";
+}
+
+#lblMyPage {
+	-fx-font-family: "GODOM";
+	-fx-font-size: 30;
+}
+
+#lbl_ID, #lbl_name, #lbl_phone, #lbl_email, #lbl_zipcode, #lbl_addr1,
+#lbl_addr2, #lbl_interest, #lbl_major, #lbl_introduce {
+	-fx-font-family: "GODOM";
+	-fx-font-size: 12;
+}

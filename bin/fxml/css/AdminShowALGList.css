@@ -1,0 +1,72 @@
+/*
+ * @author 강인경
+ * @since 2020-02-03
+ *
+ * [ID 안내]
+ * 
+ * mainFrame : AnchorPane
+ * btnAlgExerInsert : 문제 등록 button
+ * tableAlgorithmManage : 알고리즘 문제 관리 table
+ * colCate : 분류 컬럼(열)
+ * colExerNum : 문제 번호 컬럼(열)
+ * colTitle : 제목 컬럼(열)
+ * colSubmitNum : 제출자 수 컬럼(열)
+ * colCorrectNum : 정답자 수 컬럼(열)
+ * colCorrectPercent : 정답률 컬럼(열)
+ * pageAlgManage : pagination
+ *
+ */
+
+#mainFrame {
+	-fx-background-color: #f9f9f9;
+	-fx-border-color:#ffffff;
+}
+#lblMainTitle {
+	-fx-background-color: #f9f9f9;
+	-fx-font-family: "GODOM";
+	-fx-font-size: 35;
+}
+
+/*--------------------------------------*/
+#btnAlgExerInsert {
+	-fx-background-color: #f9f9f9;
+	-fx-border-color: #3f2b63;
+	-fx-border-radius:5px;
+	-fx-font-family: "GODOM";
+	-fx-font-size: 15;
+}
+
+#btnAlgExerInsert:hover {
+	-fx-background-color: #3f2b63;
+	-fx-border-color: #3f2b63;
+	-fx-cursor: hand;
+	-fx-font-family: "GODOM";
+	-fx-text-fill: #f9f9f9;
+	-fx-font-size: 15;
+}
+/*--------------------------------------*/
+
+#tableAlgorithmManage {
+	-fx-background-color: #f9f9f9;
+	-fx-border-color: #3f2b63;
+}
+
+#colCate, #colExerNum, #colTitle, #colSubmitNum, #colCorrectNum, #colCorrectPercent {
+	-fx-background-color: #f9f9f9;
+	-fx-font-family: "GODOM";
+	-fx-font-size: 12;
+}
+
+#pageAlgManage {
+	-fx-font-family: "GODOM";
+	-fx-font-size: 12;
+}
+
+#pageAlgManage:hover {
+	-fx-cursor: hand;
+}
+
+
+
+
+

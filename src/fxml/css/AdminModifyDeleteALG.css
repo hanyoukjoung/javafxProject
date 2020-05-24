@@ -1,0 +1,63 @@
+/*
+ * @author 강인경
+ * @since 2020-02-03
+ *
+ * [ID 안내]
+ *
+ * subFrameAlgInsert : AnchorPane
+ * tfAlgExerTitle : 알고리즘 문제의 제목을 작성하는 Text Field
+ * comboAlgCate : 알고리즘 문제 카테고리를 선택할 수 있는 ComboBox
+ * taAlgExerCont : 알고리즘 문제 내용을 작성할 수 있는 Text Area
+ * btnAlgExerModify  : 문제 수정 button
+ * btnAlgExerDel : 문제 삭제 button
+ * 
+ */
+#subFrameAlgInsert {
+	-fx-background-color: #f9f9f9;
+	-fx-border-color: #3f2b63;
+}
+
+#lblMainTitle {
+	-fx-background-color: #f9f9f9;
+	-fx-font-family: "GODOM";
+	-fx-font-size: 35;
+}
+
+
+#comboAlgCate {
+	-fx-font-family: "GODOM";
+	-fx-font-size: 13;
+	-fx-background-color: #f9f9f9;
+	-fx-border-color: #3f2b63;
+}
+
+#comboAlgCate:hover {
+	-fx-cursor: hand;
+}
+
+#lblTitle, #lblCont, #lblSort {
+	-fx-font-family: "GODOM"; 
+	-fx-background-color: #f9f9f9;
+	-fx-border-color: #f9f9f9;
+}
+
+#tfAlgExerTitle, #taAlgExerCont {
+	-fx-font-family: "GODOM";
+	-fx-background-color: #f9f9f9;
+	-fx-border-color: #3f2b63;
+}
+
+#btnAlgExerModify, #btnAlgExerDel {
+	-fx-font-family: "GODOM"; 
+	-fx-background-color: #f9f9f9;
+	-fx-border-color: #3f2b63;
+}
+
+#btnAlgExerModify:hover, #btnAlgExerDel:hover {
+	-fx-cursor: hand;
+	-fx-background-color: #3f2b63;
+	-fx-border-color: #3f2b63;
+	-fx-text-fill: #f9f9f9;
+}
+
+

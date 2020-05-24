@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="subFrameLCTbtnInsert" maxHeight="250.0" prefHeight="250.0" prefWidth="471.0" stylesheets="@css/MEMAddMyLCTPopUp.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.MEMAddMyLCTPopUpController">
+   <children>
+      <VBox fx:id="subFrameMLBA" alignment="CENTER" layoutY="14.0" prefHeight="280.0" prefWidth="471.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <HBox alignment="TOP_RIGHT" prefHeight="27.0" prefWidth="471.0">
+               <children>
+                  <Button fx:id="btnMin" mnemonicParsing="false" onAction="#btnMinClick" text="_" />
+                  <Button fx:id="btnClose" mnemonicParsing="false" onAction="#btnCloseClick" text="x" />
+               </children>
+               <VBox.margin>
+                  <Insets top="-22.0" />
+               </VBox.margin>
+            </HBox>
+            <GridPane alignment="CENTER" prefHeight="194.0" prefWidth="473.0">
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="228.0" minWidth="10.0" prefWidth="127.0" />
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="407.0" minWidth="10.0" prefWidth="344.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints maxHeight="36.0" minHeight="10.0" prefHeight="26.0" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="99.0" minHeight="10.0" prefHeight="99.0" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="46.0" minHeight="10.0" prefHeight="18.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="46.0" minHeight="10.0" prefHeight="18.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="1">
+                     <children>
+                        <TextField fx:id="LCEtitle" prefHeight="28.0" prefWidth="263.0" text="초급자바">
+                           <padding>
+                              <Insets left="3.0" />
+                           </padding>
+                           <HBox.margin>
+                              <Insets bottom="5.0" left="-1.0" />
+                           </HBox.margin></TextField>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER_RIGHT" prefHeight="52.0" prefWidth="208.0">
+                     <children>
+                        <Label fx:id="lblMVFolderName" text="강의 제목명">
+                           <font>
+                              <Font size="13.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets bottom="5.0" />
+                           </HBox.margin></Label>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER_RIGHT" prefHeight="100.0" prefWidth="200.0" GridPane.rowIndex="1">
+                     <children>
+                        <Label fx:id="lblVideoInfo" text="영상 안내">
+                           <font>
+                              <Font size="13.0" />
+                           </font></Label>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                     <children>
+                        <TextArea fx:id="taVideoInfo" prefHeight="142.0" prefWidth="265.0" text="자바 기초 강의 1강 영상&#10;&lt;Orientation&gt;">
+                           <padding>
+                              <Insets left="3.0" />
+                           </padding>
+                           <HBox.margin>
+                              <Insets />
+                           </HBox.margin></TextArea>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER_RIGHT" prefHeight="51.0" prefWidth="183.0" GridPane.rowIndex="2">
+                     <children>
+                        <Label fx:id="lblAddImg" text="강의 이미지 첨부" />
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                     <children>
+                        <TextField fx:id="tfImgRoute" prefHeight="28.0" prefWidth="170.0">
+                           <HBox.margin>
+                              <Insets left="-1.0" />
+                           </HBox.margin>
+                        </TextField>
+                        <Button fx:id="btnImgAdd" mnemonicParsing="false" onAction="#btnImgAddClick" prefHeight="28.0" text="이미지 첨부">
+                           <HBox.margin>
+                              <Insets left="15.0" />
+                           </HBox.margin>
+                        </Button>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER_RIGHT" prefHeight="100.0" prefWidth="200.0" GridPane.rowIndex="3">
+                     <children>
+                        <Label text="가격" textAlignment="RIGHT" />
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="3">
+                     <children>
+                        <TextField fx:id="tfprice" prefHeight="28.0" prefWidth="168.0" />
+                        <HBox prefHeight="29.0" prefWidth="88.0" />
+                     </children>
+                  </HBox>
+               </children>
+            </GridPane>
+            <HBox alignment="CENTER_LEFT" prefHeight="37.0" prefWidth="471.0">
+               <children>
+                  <Button fx:id="btnInsertPaid" maxHeight="28.0" mnemonicParsing="false" onAction="#btnInsertPaidClick" prefHeight="28.0" prefWidth="180.0" text="유료로 등록">
+                     <HBox.margin>
+                        <Insets bottom="10.0" />
+                     </HBox.margin>
+                  </Button>
+                  <Button fx:id="btnInsertFree" mnemonicParsing="false" onAction="#btnInsertFreeClick" prefHeight="35.0" prefWidth="183.0" text="무료로 등록">
+                     <HBox.margin>
+                        <Insets bottom="10.0" left="10.0" />
+                     </HBox.margin>
+                  </Button>
+               </children>
+               <VBox.margin>
+                  <Insets left="60.0" />
+               </VBox.margin>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

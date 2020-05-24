@@ -1,0 +1,24 @@
+#popUpFrame {
+	-fx-background-color: white;
+	-fx-border-color: lightgray;
+	-fx-font-family: "GODOM";
+}
+
+#sideFrame {
+	-fx-background-color: #6d84ab;
+	-fx-border-color: #6d84ab;
+}
+
+#lblCate {
+	-fx-font-family: "GODOM";
+}
+
+#tfSearch {
+	-fx-background-color: #f9f9f9;
+	-fx-border-color: lightgray;
+	-fx-font-family: "GODOM";
+}
+
+vbox {
+	-fx-font-family: "GODOM";
+}

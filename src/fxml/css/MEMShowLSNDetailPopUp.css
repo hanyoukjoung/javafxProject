@@ -1,0 +1,19 @@
+#pane{
+	-fx-border-color:#3f2b63;
+	-fx-border-width:2px;
+	-fx-background-image:url("../z.source/computer.jpg");
+}
+#btnRequest{
+	-fx-background-color:f9f9f9;
+	-fx-border-color:#3f2b63;
+	-fx-border-radius:5px;
+}
+#btnRequest:hover{
+	-fx-border-color:#cca0ff;
+	-fx-background-color:#cca0ff;
+	-fx-cursor:hand;
+	-fx-text-fill:#ffffff;
+}
+#HBox1,#HBox2,#HBox3,#HBox4,#tflow{
+	-fx-border-color:black;
+}

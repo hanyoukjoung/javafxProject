@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE sqlMap
+	PUBLIC "-//ibatis.apache.org//DTD SQL Map 2.0//EN"
+	"http://ibatis.apache.org/dtd/sql-map-2.dtd">
+<sqlMap namespace="report">
+	<select id="getAllReportCateList" resultClass="ReportCateVO">
+		SELECT * 
+		FROM   REPORT_CATE 
+	</select>
+	<insert id="insertReport" parameterClass="ReportVO">
+		INSERT INTO REPORT (RPT_NO, RPT_TARGET, MEM_ID, RPT_CATE_NO, RPT_CONT, RPT_DATE, RPT_YN) 
+		VALUES(RPT_SEQ.NEXTVAL, #rpt_target#, #mem_id#, #rpt_cate_no#, #rpt_cont#, SYSDATE, 'N') 
+	</insert>
+
+</sqlMap>

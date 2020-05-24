@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="600.0" prefWidth="850.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.AdminShowPLCTListController">
+   <children>
+      <VBox prefHeight="600.0" prefWidth="850.0">
+         <children>
+            <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <Label text="유료 강의 신청 승인/반려">
+                     <font>
+                        <Font name="System Bold" size="16.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets left="30.0" />
+                     </HBox.margin>
+                  </Label>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="400.0" prefWidth="200.0">
+               <children>
+                  <TableView fx:id="tablePLct" prefHeight="400.0" prefWidth="750.0">
+                    <columns>
+                      <TableColumn fx:id="lct_name" prefWidth="420.0" text="강의이름" />
+                      <TableColumn fx:id="lct_mem_id" prefWidth="110.0" text="회원아이디" />
+                        <TableColumn fx:id="permit" prefWidth="110.0" text="신청승인" />
+                        <TableColumn fx:id="companion" prefWidth="110.0" text="신청반려" />
+                    </columns>
+                  </TableView>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER_RIGHT" prefHeight="100.0" prefWidth="200.0" />
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

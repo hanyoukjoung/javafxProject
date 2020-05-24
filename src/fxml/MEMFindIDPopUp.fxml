@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="pane" maxHeight="400.0" maxWidth="500.0" minHeight="277.0" minWidth="428.0" prefHeight="277.0" prefWidth="430.0" style="-fx-background-color: f9f9f9; -fx-border-color: #3f2b63; -fx-border-width: 2;" stylesheets="@css/MEMFindIDPopUp.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.MEMFindIDPopUpController">
+   <children>
+      <Label layoutX="81.0" layoutY="86.0" text="이름" textFill="WHITE" />
+      <Label layoutX="69.0" layoutY="131.0" text="이메일" textFill="WHITE" />
+      <TextField fx:id="tfName" layoutX="108.0" layoutY="82.0" prefHeight="23.0" prefWidth="129.0" />
+      <TextField fx:id="tfEmail" layoutX="108.0" layoutY="127.0" prefHeight="23.0" prefWidth="156.0" />
+      <Label layoutX="268.0" layoutY="131.0" text="\@" />
+      <ComboBox fx:id="emailComBo" layoutX="280.0" layoutY="127.0" prefHeight="23.0" prefWidth="113.0" promptText="이메일 주소" />
+      <Button fx:id="btnAdductionCheck" layoutX="137.0" layoutY="219.0" mnemonicParsing="false" onAction="#btnAdductionCheckClick" style="-fx-border-radius: 5;" stylesheets="@css/MEMFindIDPopUp.css" text="ID 보내기" />
+      <ImageView fx:id="btnClose" fitHeight="15.0" fitWidth="15.0" layoutX="302.0" onMouseClicked="#btnCloseClick" pickOnBounds="true" preserveRatio="true" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <image>
+            <Image url="@../z.source/close.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="btnMin" fitHeight="15.0" fitWidth="15.0" layoutX="312.0" layoutY="10.0" onMouseClicked="#btnMinClick" pickOnBounds="true" preserveRatio="true" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="0.0">
+         <image>
+            <Image url="@../z.source/minu.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="lblSendResult" layoutX="108.0" layoutY="151.0" textFill="RED" />
+      <Label layoutX="66.0" layoutY="32.0" text="아이디 찾기" textFill="WHITE">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

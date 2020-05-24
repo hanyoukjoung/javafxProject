@@ -1,0 +1,107 @@
+/*
+ * @author 강인경
+ * @since 2020-02-03
+ *
+ * [ID 안내]
+ *
+ * [주의] 
+ * 라디오버튼 각각의 ID와 Toggle Group 명칭이 잘못 기재되었는데,
+ * 이미 구현이 많이 진행된 상태라 변경하지 못했습니다. 
+ * 상세 ID 기재해드립니다.
+ * 
+ * pane : AnchorPane 
+ * lbl_MajorLang : 가르칠 수 있는 언어 Label
+ * lbl_InterestLang : 배우고 싶은 언어 Label
+ * lblCont : 내용 Label
+ *
+ * // 가르칠 수 있는 언어의 그룹과 각각의 버튼의 ID
+ * iLang : Toggle Group명
+ * radioILangJava : 가르칠 수 있는 언어 - 'Java' radio Button 
+ * radioILangCpp : 가르칠 수 있는 언어 - 'C++' radio Button 
+ * radioILangOracle : 가르칠 수 있는 언어 - 'Oracle' radio Button
+ * radioILangPython : 가르칠 수 있는 언어 - 'Python' radio Button
+ *
+ * // 배우고 싶은 언어의 그룹과 각각의 버튼의 ID
+ * radioMLangJava : 배우고 싶은 언어 - 'Java' radio Button 
+ * radioMLangCpp : 배우고 싶은 언어 - 'C++' radio Button
+ * radioMLangOracle : 배우고 싶은 언어 - 'Oracle' radio Button
+ * radioMLangPython : 배우고 싶은 언어 - 'Python' radio Button
+ *
+ * taContent : 내용을 작성하는 Text Area
+ * btnInsertLBoard : 글을 등록할 수 있는 Button
+ *
+ * btnMin : 창 크기 최소화 Button
+ * btnClose : 창 닫기 Button
+ *
+ */
+ 
+ #pane {
+ 	-fx-background-color: #f9f9f9;
+ 	-fx-border-color: lightgray;
+ 	-fx-font-family: "GODOM"; 
+ }
+ 
+ #lbl_MajorLang, #lbl_InterestLang, #lblCont {
+ 	-fx-background-color: #f9f9f9;
+ 	-fx-border-color: #f9f9f9;
+ 	-fx-font-size: 15;	
+ }
+ 
+ #radioILangJava, #radioILangCpp, #radioILangOracle, #radioILangPython, 
+ #radioMLangJava, #radioMLangCpp, #radioMLangOracle, #radioMLangPython {
+ 	-fx-background-color: #f9f9f9;
+ 	-fx-border-color: #f9f9f9;
+ 	-fx-font-size: 14;	
+ }
+ 
+ #taContent {
+ 	-fx-background-color: #f9f9f9;
+ 	-fx-border-color: lightgray;
+ }
+ 
+ #taContent:hover {
+ 	-fx-cursor: hand;
+ }
+ 
+ #btnInsertLBoard {
+ 	-fx-background-color: #f9f9f9;
+ 	-fx-border-color: lightgray;
+ 	-fx-font-size: 15;
+ }
+ 
+ #btnMin, #btnClose {
+ 	-fx-background-color: #f9f9f9;
+ 	-fx-border-color: #f9f9f9;
+ 	-fx-font-size: 12;
+ }
+ 
+ #btnInsertLBoard:hover { 
+ 	-fx-cursor: hand;
+ 	-fx-border-color: lightgray;
+ 	-fx-background-color: lightgray;
+ }
+ 
+ #btnMin:hover, #btnClose:hover {
+ 	-fx-cursor: hand;
+ }
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 

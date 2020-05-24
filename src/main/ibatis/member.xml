@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE sqlMap
+	PUBLIC "-//ibatis.apache.org//DTD SQL Map 2.0//EN"
+	"http://ibatis.apache.org/dtd/sql-map-2.dtd">
+<!--회원 -->
+<sqlMap namespace="member">
+
+	<select id="isExistMemId" parameterClass="String" resultClass="int">
+		select count(*) 
+		from member 
+		where mem_id = #mem_id#
+	</select>
+	
+	<select id="isExistAccount" parameterClass="Map" resultClass="int">
+		select count(*) 
+		from member 
+		where mem_id = #mem_id# 
+		and mem_pw = #mem_pw#
+		and mem_act_yn = 'Y'
+	</select>
+	
+	<insert id="memberJoin" parameterClass="MemberVO">
+		insert into member 
+					values (#mem_id#, #mem_name#, #mem_pw#, #mem_regno1#, #mem_regno2#, #mem_tel#, #mem_email#, 
+							#mem_addr#, #mem_dtladdr#, sysdate, #mem_point#, #mem_grade#, #mem_introd#, 
+							#mem_act_yn#, #lang_major#, #lang_itrst#, #mem_zip#)
+	</insert>
+	
+	<select id="getMemberData" parameterClass="String" resultClass="MemberVO">
+		select *
+		  from member 
+		 where mem_id = #mem_id#
+		   and mem_act_yn = 'Y'
+	</select>
+	
+	<update id="updateMemPass" parameterClass="Map">
+		update member 
+		   set mem_pw = #mem_pw# 
+		 where mem_id = #mem_id#
+	</update>
+	
+	<select id="getMemId" parameterClass="Map" resultClass="String">
+		select mem_id 
+		  from member 
+		 where mem_name = #mem_name# 
+		   and mem_email = #mem_email#
+		   and mem_act_yn = 'Y'
+	</select>
+	
+	<select id="getMemberFile" parameterClass="String" resultClass="MemFileVO">
+		SELECT	*
+		FROM	MEM_FILE
+		WHERE	MEM_ID = #MEM_FILE#
+	</select>
+	
+	<update id="updateMember" parameterClass="MemberVO">
+		update member 
+		   set mem_pw = #mem_pw#, 
+		   	   mem_name = #mem_name#,
+		       mem_tel = #mem_tel#,  
+		       mem_email = #mem_email#,  
+		       mem_addr = #mem_addr#, 
+		       mem_dtladdr = #mem_dtladdr#, 
+		       mem_introd = #mem_introd#, 
+		       lang_major = #lang_major#,
+		       lang_itrst = #lang_itrst#, 
+		       mem_zip = #mem_zip# 
+ 	 	 where mem_id = #mem_id#
+ 	</update>
+	
+	<select id="getMemStat" resultClass="GenderChartVO">
+		SELECT A.MALE, B.FEMALE
+		FROM	(SELECT COUNT(*) AS MALE FROM MEMBER WHERE MOD(TO_NUMBER(SUBSTR(MEM_REGNO2,0,1)), 2) = 1 ) A,
+				(SELECT COUNT(*) AS FEMALE FROM MEMBER WHERE MOD(TO_NUMBER(SUBSTR(MEM_REGNO2,0,1)), 2) = 0 ) B
+	</select>
+	
+	<update id="deleteMemAccount" parameterClass="String">
+		update member 
+		   set mem_act_yn = 'N' 
+		 where mem_id = #mem_id#
+	</update>
+	
+</sqlMap>

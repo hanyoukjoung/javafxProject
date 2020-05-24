@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="frameMEMSearchPopUp" maxHeight="600.0" prefHeight="600.0" prefWidth="450.0" stylesheets="@css/AdminShowMEMDetailPopUp.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.AdminShowMEMDetailPopUpController">
+   <children>
+      <VBox prefHeight="602.0" prefWidth="452.0">
+         <children>
+            <HBox alignment="TOP_RIGHT" prefHeight="30.0" prefWidth="200.0">
+               <children>
+                  <Button fx:id="btnMin" mnemonicParsing="false" onAction="#btnMinClick" text="_">
+                     <HBox.margin>
+                        <Insets top="1.0" />
+                     </HBox.margin></Button>
+                  <Button fx:id="btnClose" mnemonicParsing="false" onAction="#btnCloseClick" text="x">
+                     <HBox.margin>
+                        <Insets top="1.0" />
+                     </HBox.margin></Button>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER_LEFT" prefHeight="55.0" prefWidth="450.0">
+               <children>
+                  <ImageView fitHeight="60.0" fitWidth="60.0" pickOnBounds="true" preserveRatio="true">
+                     <HBox.margin>
+                        <Insets left="70.0" />
+                     </HBox.margin>
+                     <image>
+                        <Image url="@../z_source/member.png" />
+                     </image>
+                  </ImageView>
+                  <Label fx:id="lblMainTitle" text="회원 조회">
+                     <font>
+                        <Font name="System Bold" size="25.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets left="20.0" />
+                     </HBox.margin>
+                  </Label>
+               </children>
+            </HBox>
+            <HBox prefHeight="35.0" prefWidth="450.0">
+               <children>
+                  <Label fx:id="memID" alignment="CENTER_RIGHT" prefWidth="100.0" text="아이디 ">
+                     <HBox.margin>
+                        <Insets right="10.0" />
+                     </HBox.margin>
+                  </Label>
+                  <Label fx:id="lblMemId" text="gildong123">
+                     <HBox.margin>
+                        <Insets left="10.0" />
+                     </HBox.margin>
+                  </Label>
+               </children>
+               <VBox.margin>
+                  <Insets left="30.0" top="20.0" />
+               </VBox.margin>
+            </HBox>
+            <HBox prefHeight="35.0" prefWidth="450.0">
+               <children>
+                  <Label fx:id="memName" alignment="CENTER_RIGHT" prefWidth="100.0" text="이름 ">
+                     <HBox.margin>
+                        <Insets right="10.0" />
+                     </HBox.margin>
+                  </Label>
+                  <Label fx:id="lblMemName" text="홍길동">
+                     <HBox.margin>
+                        <Insets left="10.0" />
+                     </HBox.margin>
+                  </Label>
+               </children>
+               <VBox.margin>
+                  <Insets left="30.0" />
+               </VBox.margin>
+            </HBox>
+            <HBox prefHeight="35.0" prefWidth="450.0">
+               <children>
+                  <Label fx:id="memTel" alignment="CENTER_RIGHT" prefWidth="100.0" text="연락처 ">
+                     <HBox.margin>
+                        <Insets right="10.0" />
+                     </HBox.margin>
+                  </Label>
+                  <Label fx:id="lblMemTel" text="010-1234-1234">
+                     <HBox.margin>
+                        <Insets left="10.0" />
+                     </HBox.margin>
+                  </Label>
+               </children>
+               <VBox.margin>
+                  <Insets left="30.0" />
+               </VBox.margin>
+            </HBox>
+            <HBox prefHeight="35.0" prefWidth="450.0">
+               <children>
+                  <Label fx:id="memEmail" alignment="CENTER_RIGHT" prefWidth="100.0" text="이메일 ">
+                     <HBox.margin>
+                        <Insets right="10.0" />
+                     </HBox.margin>
+                  </Label>
+                  <Label fx:id="lblMemEmail" text="gildong2@gmail.com">
+                     <HBox.margin>
+                        <Insets left="10.0" />
+                     </HBox.margin>
+                  </Label>
+               </children>
+               <VBox.margin>
+                  <Insets left="30.0" />
+               </VBox.margin>
+            </HBox>
+            <HBox prefHeight="35.0" prefWidth="450.0">
+               <children>
+                  <Label fx:id="memRptCnt" alignment="CENTER_RIGHT" prefWidth="100.0" text="신고 누적 횟수">
+                     <HBox.margin>
+                        <Insets right="10.0" />
+                     </HBox.margin>
+                  </Label>
+                  <Label fx:id="lblMemRptCnt" text="0">
+                     <HBox.margin>
+                        <Insets left="11.0" />
+                     </HBox.margin>
+                  </Label>
+               </children>
+               <VBox.margin>
+                  <Insets left="30.0" />
+               </VBox.margin>
+            </HBox>
+            <HBox prefHeight="250.0" prefWidth="450.0">
+               <children>
+                  <Label fx:id="memRptCont" alignment="CENTER_RIGHT" prefWidth="100.0" text="신고 내용">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets right="10.0" />
+                     </HBox.margin>
+                  </Label>
+                  <ListView fx:id="ListViewMemRptCont" maxHeight="270.0" prefHeight="270.0" prefWidth="250.0">
+                     <HBox.margin>
+                        <Insets left="5.0" />
+                     </HBox.margin>
+                  </ListView>
+               </children>
+               <VBox.margin>
+                  <Insets left="30.0" top="10.0" />
+               </VBox.margin>
+            </HBox>
+         </children></VBox>
+   </children>
+</AnchorPane>

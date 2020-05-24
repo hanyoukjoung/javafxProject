@@ -1,0 +1,17 @@
+#btnIdCheck, #btnAdductionSend, #btnAdductionCheck, #btnSearchZip, #btnJoin{
+	-fx-background-color:f9f9f9;
+	-fx-font-family: "GODOM";
+}
+
+#btnIdCheck:hover, #btnAdductionSend:hover, #btnAdductionCheck:hover, #btnSearchZip:hover, #btnJoin:hover{
+	-fx-background-color:#cca0ff;
+	-fx-border-color:#cca0ff;
+	-fx-text-fill:ffffff;
+	-fx-cursor:hand;
+}
+
+#btnIdCheck, #btnAdductionSend, #btnAdductionCheck, #btnSearchZip, #btnJoin{
+	-fx-border-color:#3f2b63;
+}
+
+#pane{-fx-background-image : url("../../z.source/computer.jpg");}

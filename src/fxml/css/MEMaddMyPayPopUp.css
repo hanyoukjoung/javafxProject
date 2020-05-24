@@ -1,0 +1,41 @@
+#frame {
+	-fx-background-color: lightgray;
+	-fx-border-color: lightgray;
+	-fx-font-family: "GODOM";
+}
+
+#btnMin:hover, #btnClose:hover {
+	-fx-cursor:hand;
+}
+
+#lblText {
+	-fx-background-color: #f9f9f9;
+	-fx-border-color: #f9f9f9;
+	-fx-font-size: 18;
+}
+
+#lblWon {
+	-fx-background-color: #f9f9f9;
+	-fx-border-color: #f9f9f9;
+	-fx-font-size: 17;
+}
+
+#tfprice {
+	-fx-background-color: lightgray;
+	-fx-border-color: #f9f9f9;
+	-fx-font-family: "GODOM";
+	-fx-font-size: 14;
+}
+
+#btnConfirm {
+	-fx-background-color: #f9f9f9;
+	-fx-border-color: lightgray;
+	-fx-font-family: "GODOM";
+	-fx-font-size: 13;
+}
+
+#btnConfirm:hover {
+	-fx-background-color: lightgray;
+	-fx-border-color: lightgray;
+	-fx-cursor: hand;
+}

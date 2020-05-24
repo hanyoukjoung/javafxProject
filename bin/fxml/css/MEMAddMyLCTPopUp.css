@@ -1,0 +1,81 @@
+/*
+ * @author 강인경
+ * @since 2020-02-03
+ *
+ * [ID 안내]
+ * 
+ * subFrameLCTbtnInsert : AnchorPane
+ * btnMin : 창 크기 최소화 Button
+ * btnClose : 창 닫기 Button
+ * lblMVFolderName : '강의 폴더명' Label
+ * tfMVFolderName : 강의 영상파일 경로 Text Field 
+ * btnAddVideo : 강의 영상파일 첨부 Button
+ * lblVideoInfo : '강의 안내' Label
+ * taVideoInfo : 강의 영상을 안내하는 텍스트를 작성할 Text Area
+ * lblAddImg : '강의 이미지 첨부' Label
+ * tfImgRoute : 강의 이미지파일 경로 Text Field
+ * btnImgAdd : 강의 이미지파일 첨부 Button
+ * btnInsertPaid : 유료로 등록하기 Button
+ * btnInsertFree : 무료로 등록하기 Button 
+ *
+ */
+ 
+#subFrameLCTbtnInsert {
+ 	-fx-background-color: #f9f9f9;
+ 	-fx-border-color: lightgray;
+}
+ 
+#btnMin, #btnClose {
+ 	-fx-background-color: #f9f9f9;
+ 	-fx-border-color:  #f9f9f9;
+ 	-fx-font-size: 12;
+ 	-fx-font-family: "GODOM";
+}
+ 
+#btnMin:hover, #btnClose:hover {
+ 	-fx-cursor: hand;
+}
+ 
+#lblMVFolderName, #lblVideoInfo, #lblAddImg {
+	-fx-font-family: "GODOM";
+	-fx-background-color: #f9f9f9;
+	-fx-border-color: #f9f9f9;
+	-fx-font-size: 13;
+}
+ 
+#taVideoInfo {
+	-fx-background-color: #f9f9f9;
+	-fx-border-color: #b3ada1;
+}
+
+#tfMVFolderName, #tfImgRoute {
+	-fx-background-color: #f2f2f2;
+	-fx-border-color: #f9f9f9;
+}
+
+#btnAddVideo, #btnImgAdd, #btnInsertPaid, #btnInsertFree {
+	-fx-background-color: #f9f9f9;
+	-fx-border-color: #b3ada1;
+	-fx-font-family: "GODOM";
+}
+
+#btnAddVideo:hover, #btnImgAdd:hover, #btnInsertPaid:hover, #btnInsertFree:hover {
+	-fx-cursor: hand;
+	-fx-background-color: #b3ada1;
+	-fx-border-color: #b3ada1;
+	-fx-text-fill: black;
+}
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 

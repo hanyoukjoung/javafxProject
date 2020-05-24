@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Pagination?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+<?import javafx.scene.text.TextFlow?>
+
+<AnchorPane fx:id="msgFrame" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="600.0" stylesheets="@css/MEMShowMSGPopUp.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.MEMShowMSGPopUpController">
+   <children>
+      <ImageView fx:id="btnMin" fitHeight="15.0" fitWidth="15.0" layoutX="558.0" layoutY="7.0" onMouseClicked="#btnMinClick" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../z.source/minu.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="btnClose" fitHeight="15.0" fitWidth="15.0" layoutX="579.0" layoutY="7.0" onMouseClicked="#btnCloseClcik" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../z.source/close.png" />
+         </image>
+      </ImageView>
+      <Label id="MSGTitle" fx:id="MSGTitle" alignment="TOP_LEFT" layoutX="23.0" layoutY="14.0" prefHeight="58.0" prefWidth="331.0" style="-fx-font-family: tvN 즐거운이야기 Medium;" stylesheets="@css/MEMShowMSGPopUp.css" text="MESSAGE">
+         <font>
+            <Font name="Mangal Bold" size="30.0" />
+         </font>
+         <padding>
+            <Insets left="30.0" />
+         </padding>
+      </Label>
+      <VBox fx:id="vbox" layoutY="74.0" prefHeight="726.0" prefWidth="600.0" AnchorPane.leftAnchor="2.0" AnchorPane.rightAnchor="2.0">
+         <children>
+            <ImageView fx:id="btnSend" fitHeight="39.0" fitWidth="57.0" onMouseClicked="#btnSendClick" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../z.source/send.png" />
+               </image>
+               <VBox.margin>
+                  <Insets left="470.0" />
+               </VBox.margin>
+            </ImageView>
+            <HBox alignment="CENTER" prefHeight="83.0" prefWidth="200.0">
+               <children>
+                  <VBox prefHeight="200.0" prefWidth="100.0">
+                     <children>
+                        <ImageView fx:id="image1" fitHeight="65.0" fitWidth="65.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../z.source/supermario48.png" />
+                           </image>
+                        </ImageView>
+                        <Label fx:id="name1" alignment="CENTER" contentDisplay="CENTER" prefHeight="19.0" prefWidth="71.0" text="강인경">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets top="5.0" />
+                           </VBox.margin>
+                        </Label>
+                     </children>
+                  </VBox>
+                  <TextFlow fx:id="taMSG1" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="83.0" prefWidth="333.0" style="-fx-border-color: #3f2b63;">
+                     <children>
+                        <Text fx:id="text1" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+                     </children>
+                  </TextFlow>
+               </children>
+               <VBox.margin>
+                  <Insets bottom="5.0" left="10.0" right="10.0" top="10.0" />
+               </VBox.margin>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="85.0" prefWidth="200.0">
+               <children>
+                  <VBox prefHeight="200.0" prefWidth="100.0">
+                     <children>
+                        <ImageView fx:id="image2" fitHeight="65.0" fitWidth="65.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../z.source/supermario48.png" />
+                           </image></ImageView>
+                        <Label fx:id="name2" alignment="CENTER" contentDisplay="CENTER" prefHeight="19.0" prefWidth="71.0" text="김범수">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets top="5.0" />
+                           </VBox.margin>
+                        </Label>
+                     </children>
+                  </VBox>
+                  <TextFlow fx:id="taMSG2" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="83.0" prefWidth="333.0" style="-fx-border-color: #3f2b63;">
+                     <children>
+                        <Text fx:id="text2" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+                     </children>
+                  </TextFlow>
+               </children>
+               <VBox.margin>
+                  <Insets bottom="5.0" left="10.0" right="10.0" />
+               </VBox.margin>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="85.0" prefWidth="200.0">
+               <children>
+                  <VBox prefHeight="200.0" prefWidth="100.0">
+                     <children>
+                        <ImageView fx:id="image3" fitHeight="65.0" fitWidth="65.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../z.source/supermario48.png" />
+                           </image></ImageView>
+                        <Label fx:id="name3" alignment="CENTER" contentDisplay="CENTER" prefHeight="19.0" prefWidth="71.0" text="우영래">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets top="5.0" />
+                           </VBox.margin>
+                        </Label>
+                     </children>
+                  </VBox>
+                  <TextFlow fx:id="taMSG3" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="83.0" prefWidth="333.0" style="-fx-border-color: #3f2b63;">
+                     <children>
+                        <Text fx:id="text3" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+                     </children>
+                  </TextFlow>
+               </children>
+               <VBox.margin>
+                  <Insets bottom="5.0" left="10.0" right="10.0" />
+               </VBox.margin>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="85.0" prefWidth="200.0">
+               <children>
+                  <VBox prefHeight="200.0" prefWidth="100.0">
+                     <children>
+                        <ImageView fx:id="image4" fitHeight="65.0" fitWidth="65.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../z.source/supermario48.png" />
+                           </image></ImageView>
+                        <Label fx:id="name4" alignment="CENTER" contentDisplay="CENTER" prefHeight="19.0" prefWidth="71.0" text="정수민">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets top="5.0" />
+                           </VBox.margin>
+                        </Label>
+                     </children>
+                  </VBox>
+                  <TextFlow fx:id="taMSG4" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="83.0" prefWidth="333.0" style="-fx-border-color: #3f2b63;">
+                     <children>
+                        <Text fx:id="text4" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+                     </children>
+                  </TextFlow>
+               </children>
+               <VBox.margin>
+                  <Insets bottom="5.0" left="10.0" right="10.0" />
+               </VBox.margin>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="85.0" prefWidth="200.0">
+               <children>
+                  <VBox prefHeight="200.0" prefWidth="100.0">
+                     <children>
+                        <ImageView fx:id="image5" fitHeight="65.0" fitWidth="65.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../z.source/supermario48.png" />
+                           </image></ImageView>
+                        <Label fx:id="name5" alignment="CENTER" contentDisplay="CENTER" prefHeight="19.0" prefWidth="71.0" text="정재훈">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets top="5.0" />
+                           </VBox.margin>
+                        </Label>
+                     </children>
+                  </VBox>
+                  <TextFlow fx:id="taMSG5" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="83.0" prefWidth="333.0" style="-fx-border-color: #3f2b63;">
+                     <children>
+                        <Text fx:id="text5" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+                     </children>
+                  </TextFlow>
+               </children>
+               <VBox.margin>
+                  <Insets bottom="5.0" left="10.0" right="10.0" />
+               </VBox.margin>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="85.0" prefWidth="200.0">
+               <children>
+                  <VBox prefHeight="200.0" prefWidth="100.0">
+                     <children>
+                        <ImageView fx:id="image6" fitHeight="65.0" fitWidth="65.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../z.source/supermario48.png" />
+                           </image></ImageView>
+                        <Label fx:id="name6" alignment="CENTER" contentDisplay="CENTER" prefHeight="19.0" prefWidth="71.0" text="한유경">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets top="5.0" />
+                           </VBox.margin>
+                        </Label>
+                     </children>
+                  </VBox>
+                  <TextFlow fx:id="taMSG6" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="83.0" prefWidth="333.0" style="-fx-border-color: #3f2b63;">
+                     <children>
+                        <Text fx:id="text6" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+                     </children>
+                  </TextFlow>
+               </children>
+               <VBox.margin>
+                  <Insets bottom="5.0" left="10.0" right="10.0" />
+               </VBox.margin>
+            </HBox>
+            <VBox prefHeight="80.0" prefWidth="100.0">
+               <children>
+                  <Pagination fx:id="pageMSG" maxPageIndicatorCount="5" prefHeight="68.0" prefWidth="598.0">
+                     <VBox.margin>
+                        <Insets top="-10.0" />
+                     </VBox.margin>
+                  </Pagination>
+               </children>
+            </VBox>
+         </children>
+      </VBox>
+   </children>
+   <padding>
+      <Insets left="5.0" right="5.0" />
+   </padding>
+</AnchorPane>

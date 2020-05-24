@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="subFrameAlgInsert" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="850.0" stylesheets="@css/AdminAddALG.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.AdminAddALGController">
+   <children>
+      <TextArea fx:id="taAlgExerCode" layoutX="344.0" layoutY="106.0" prefHeight="433.0" prefWidth="450.0" promptText="기본 코드 폼을 입력해주세요." />
+      <TextArea fx:id="taAlgExerCont" layoutX="58.0" layoutY="106.0" prefHeight="480.0" prefWidth="260.0" promptText="문제를 입력해주세요." />
+      <TextField fx:id="tfAlgExerTitle" layoutX="58.0" layoutY="61.0" prefHeight="31.0" prefWidth="545.0" promptText="제목을 입력해주세요." />
+      <ComboBox fx:id="comboAlgCate" layoutX="643.0" layoutY="61.0" prefHeight="30.0" prefWidth="150.0" promptText="분류" />
+      <Label fx:id="lblMainTitle" layoutX="274.0" layoutY="10.0" text="알고리즘 문제 등록">
+         <font>
+            <Font size="35.0" />
+         </font>
+      </Label>
+      <Button fx:id="btnAlgExerInsert" layoutX="611.0" layoutY="550.0" mnemonicParsing="false" onAction="#btnAlgExerInsertClick" prefHeight="30.0" prefWidth="85.0" text="문제 등록" />
+      <Button fx:id="btnBack" layoutX="709.0" layoutY="550.0" mnemonicParsing="false" onAction="#btnBackClick" prefHeight="30.0" prefWidth="85.0" text="뒤로가기" />
+      <Button fx:id="btnAddCRCTCode" layoutX="435.0" layoutY="550.0" mnemonicParsing="false" onAction="#btnAddCRCTCodeClick" prefHeight="30.0" prefWidth="163.0" text="정답 소스 추가" />
+   </children>
+</AnchorPane>

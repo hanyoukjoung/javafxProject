@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE sqlMapConfig
+	PUBLIC "-//ibatis.apache.org//DTD SQL Map Config 2.0//EN"
+	"http://ibatis.apache.org/dtd/sql-map-config-2.dtd">
+<sqlMapConfig>
+	<!-- 
+		DB와 연결할 때 필요한 정보를 properties파일에 설정해 놓고
+		이 properties파일의 내용을 읽어와서 설정한다.
+	 -->
+	<properties resource="sqlMapConfig.properties"/>
+	
+	<!-- 
+		maxRequests : 동시에 SQL문을 수행할 Thread 수 (기본값 : 512)
+		maxSessions : 주어진 시간동안 활성화 될 수 있는 세션 수 (기본값 : 128)
+		maxTransactions : setTransaction에 들어갈 수 있는 Thread수 (기본값 : 32)
+		
+		maxRequests >= maxSessions >= maxTransactions
+	-->
+	<settings cacheModelsEnabled="true"
+			  enhancementEnabled="true"
+			  lazyLoadingEnabled="true"
+			  maxRequests="32"			
+			  maxSessions="10"
+			  maxTransactions="5"
+			  useStatementNamespaces="true"/>
+	
+	<!-- iBatis에서 자바의 클래스파일(VO클래스 등)을 사용할 때는 그 클래스의
+		전체 이름(패키지명까지 포함된 이름)을 사용해야 되는데, 이렇게 되면 전체 이름의 길이가
+		길어질 수 있는데 이것을 간단한 Alias로 대신할 수 있도록 설정하기
+		예)<typeAlias alias="alias명" type="클래스의 전체 이름"/>
+	-->
+<!-- 	<typeAlias alias="lprodVo" type="basic.LprodVO"/> -->
+<!-- 	<typeAlias alias="memVo" type="basic.mvc.vo.MemberVO"/> -->
+	<typeAlias alias="AdminVO" type="main.vo.AdminVO"/>
+	<typeAlias alias="AdviceVO" type="main.vo.AdviceVO"/>
+	<typeAlias alias="AlgBFileVO" type="main.vo.AlgBFileVO"/>
+	<typeAlias alias="AlgCateVO" type="main.vo.AlgCateVO"/>
+	<typeAlias alias="AlgCmntVO" type="main.vo.AlgCmntVO"/>
+	<typeAlias alias="AlgorithmVO" type="main.vo.AlgorithmVO"/>
+	<typeAlias alias="AlgSFileVO" type="main.vo.AlgSFileVO"/>
+	<typeAlias alias="AlgSubmtVO" type="main.vo.AlgSubmtVO"/>
+	<typeAlias alias="BlkListVO" type="main.vo.BlkListVO"/>
+	<typeAlias alias="ChatMemVO" type="main.vo.ChatMemVO"/>
+	<typeAlias alias="ChatFileVO" type="main.vo.ChatFileVO"/>
+		
+	
+	<typeAlias alias="ChatFileVO" type="main.vo.ChatFileVO"/>
+	
+	<typeAlias alias="ChatVO" type="main.vo.ChatVO"/>
+	<typeAlias alias="ChatContVO" type="main.vo.ChatContVO"/>
+	<typeAlias alias="ContentsVO" type="main.vo.ContentsVO"/>
+	<typeAlias alias="CttBFileVO" type="main.vo.CttBFileVO"/>
+	<typeAlias alias="CttCmntVO" type="main.vo.CttCmntVO"/>
+	<typeAlias alias="CttGbVO" type="main.vo.CttGbVO"/>
+	<typeAlias alias="CttSFileVO" type="main.vo.CttSFileVO"></typeAlias>
+	<typeAlias alias="EvaluationVO" type="main.vo.EvaluationVO"/>
+	<typeAlias alias="FAQBoardVO" type="main.vo.FAQBoardVO"/>
+	<typeAlias alias="FboardCmntVO" type="main.vo.FboardCmntVO"/>
+	<typeAlias alias="FboardVO" type="main.vo.FboardVO"/>
+	<typeAlias alias="TotalBoardVO" type="main.vo.TotalBoardVO"/>
+	<typeAlias alias="GradeFileVO" type="main.vo.GradeFileVO"/>
+	
+	<typeAlias alias="GradeVO" type="main.vo.GradeVO"/>
+	<typeAlias alias="IdCertVO" type="main.vo.IdCertVO"/>
+	<typeAlias alias="JibunVO" type="main.vo.JibunVO"/>
+	
+	<typeAlias alias="LanguageVO" type="main.vo.LanguageVO"/>
+	<typeAlias alias="LboardCmntVO" type="main.vo.LboardCmntVO"/>
+	<typeAlias alias="LboardVO" type="main.vo.LboardVO"/>
+	
+	<typeAlias alias="LctEvalVO" type="main.vo.LctEvalVO"/>
+
+	
+	<typeAlias alias="MemberVO" type="main.vo.MemberVO"/>
+	<typeAlias alias="MemFileVO" type="main.vo.MemFileVO"/>
+	<typeAlias alias="MessageVO" type="main.vo.MessageVO"/>
+	<typeAlias alias="MessageMemNameVO" type="main.vo.MessageMemNameVO"/>
+	
+	<typeAlias alias="MsgCateVO" type="main.vo.MsgCateVO"/>
+	<typeAlias alias="NBoardVO" type="main.vo.NBoardVO"/>
+	<typeAlias alias="PaidMemVO" type="main.vo.PaidMemVO"/>
+	
+	<typeAlias alias="PlctRecordVO" type="main.vo.PlctRecordVO"/>
+	<typeAlias alias="PqsVO" type="main.vo.PqsVO"/>
+	<typeAlias alias="ReportCateVO" type="main.vo.ReportCateVO"/>
+	
+	<typeAlias alias="ReportFBoardVO" type="main.vo.ReportFBoardVO"/>
+	<typeAlias alias="ReportVO" type="main.vo.ReportVO"/>
+	<typeAlias alias="RnAddrVO" type="main.vo.RnAddrVO"/>
+	<typeAlias alias="RnCodeVO" type="main.vo.RnCodeVO"/>
+	
+	<typeAlias alias="RnEtcInfoVO" type="main.vo.RnEtcInfoVO"/>
+	<typeAlias alias="ScheduleVO" type="main.vo.ScheduleVO"/>
+	<typeAlias alias="SubscribeVO" type="main.vo.SubscribeVO"/>
+	<typeAlias alias="TradeRecordVO" type="main.vo.TradeRecordVO"/>
+	
+	<typeAlias alias="MEMShowMYLCTVO" type="main.vo.MEMShowMYLCTVO"/>
+	<typeAlias alias="LctProfFileVO" type="main.vo.LctProfFileVO"/>
+	<typeAlias alias="LectureVO" type="main.vo.LectureVO"/>
+	<typeAlias alias="GenderChartVO" type="main.vo.GenderChartVO"/>
+	<typeAlias alias="AddrVO" type="main.vo.AddrVO"/>
+
+	<typeAlias alias="ContentsCttGBVO" type="main.vo.ContentsCttGBVO"/>
+
+
+	<typeAlias alias="LineChartVO" type="main.vo.AdminLineChartVO"/>
+	<typeAlias alias="RepotMemberVO" type="main.vo.RepotMemberVO"/>
+	
+
+	<!-- DB와 연결을 처리하는 부분 : 
+		sqlMapConfig.properties파일에 설정된 값을 가져와서 셋팅한다.
+	-->
+	<transactionManager type="JDBC">
+		<dataSource type="SIMPLE">
+			<property name="JDBC.Driver" value="${driver}"/>
+			<property name="JDBC.ConnectionURL" value="${url}"/>
+			<property name="JDBC.Username" value="${user}"/>
+			<property name="JDBC.Password" value="${pass}"/>
+		</dataSource>
+	</transactionManager>
+	
+	<!-- 
+		실행할 SQL문은 xml문서로 따로 만든 후 그 xml문서를 이곳에 등록해 준다.
+		등록하는 예) <sqlMap resource="경로명/파일명.xml"/>
+	 -->
+	 <sqlMap resource="main/ibatis/admin.xml"/>
+ 	 <sqlMap resource="main/ibatis/address.xml"/> 
+	 <sqlMap resource="main/ibatis/advice.xml"/> 
+	 <sqlMap resource="main/ibatis/algorithm.xml"/> 
+ 	 <sqlMap resource="main/ibatis/board.xml"/> 
+ 	 <sqlMap resource="main/ibatis/evaluation.xml"/> 
+	 <sqlMap resource="main/ibatis/lecture.xml"/>
+	 <sqlMap resource="main/ibatis/lesson.xml"/> 
+	 <sqlMap resource="main/ibatis/member.xml"/> 
+ 	 <sqlMap resource="main/ibatis/message.xml"/> 
+ 	 <sqlMap resource="main/ibatis/trade.xml"/> 
+ 	 <sqlMap resource="main/ibatis/comment.xml"/> 
+	
+</sqlMapConfig>

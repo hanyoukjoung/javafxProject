@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE sqlMap
+	PUBLIC "-//ibatis.apache.org//DTD SQL Map 2.0//EN"
+	"http://ibatis.apache.org/dtd/sql-map-2.dtd">
+<!-- 주소 -->
+<sqlMap namespace="address">
+
+	<select id="getSearchAddr" parameterClass="Map" resultClass="AddrVO">
+		select DISTINCT c.post_no, 
+          	   a.sido_name, 
+         	   a.sigungoo_name, 
+          	   a.rna, 
+         	   b.building_bonbun, 
+          	   c.sigungoo_building_name 
+    	  from rn_code a, rn_addr b, rn_etc_info c 
+    	 where b.rna_cord = a.rna_cord 
+    	   and b.gwanri_no = c.gwanri_no 
+    	   and a.sido_name = #sido_name# 
+    	   and a.sigungoo_name = #sigungoo_name# 
+    	   and a.rna = #rna# 
+    	   and b.building_bonbun = #building_bonbun#
+	</select>
+	
+</sqlMap>	
+
+
+
+
+
+
+
+

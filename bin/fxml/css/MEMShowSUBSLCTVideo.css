@@ -1,0 +1,52 @@
+#frameVideo {
+	-fx-background-color: #f9f9f9;
+	-fx-font-family : "GODOM";
+}
+
+#mediaView {
+	-fx-border-color: lightgray;
+}
+
+#btnpre:hover, #btnplay:hover, #btnnext:hover, #btnadv:hover {
+	-fx-cursor:hand;
+}
+
+#lblComment, #lblCmnt {
+	-fx-background-color: #f9f9f9;
+	-fx-border-color: #f9f9f9;
+	-fx-font-size: 15;
+}
+
+#scrollcomment {
+	-fx-background-color: #f9f9f9;
+	-fx-border-color: lightgray;
+	-fx-font-family : "GODOM";
+	-fx-font-size: 12;
+}
+
+#AnchorComment {
+	-fx-background-color: #f9f9f9;
+	-fx-border-color: #f9f9f9;
+	-fx-font-family : "GODOM";
+	-fx-font-size: 12;
+}
+
+#tfComment {
+	-fx-background-color: #f9f9f9;
+	-fx-border-color: lightgray;
+	-fx-font-family : "GODOM";
+	-fx-font-size: 12;
+}
+
+#btnClose {
+	-fx-background-color: #f9f9f9;
+	-fx-border-color: lightgray;
+	-fx-font-family : "GODOM";
+	-fx-font-size: 15;
+}
+
+#btnClose:hover {
+	-fx-background-color: lightgray;
+	-fx-border-color: lightgray;
+	-fx-cursor: hand;
+} 

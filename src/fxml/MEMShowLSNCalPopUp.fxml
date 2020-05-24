@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="mainFrame" prefHeight="420.0" prefWidth="800.0" style="-fx-background-color: #FFFFFF;" stylesheets="@../fxml/css/MEMShowLSNCalPopUp.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.MEMShowLSNCalPopUpController">
+   <children>
+      <BorderPane layoutX="14.0" layoutY="52.0" prefHeight="200.0" prefWidth="200.0">
+         <center>
+            <GridPane fx:id="calGridPane" alignment="CENTER" minHeight="280.0" minWidth="385.0" prefHeight="280.0" prefWidth="385.0" style="-fx-background-color: #e0e0e0;" BorderPane.alignment="CENTER">
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="55.0" minWidth="55.0" prefWidth="55.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="55.0" minWidth="55.0" prefWidth="55.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="55.0" minWidth="55.0" prefWidth="55.0" />
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="55.0" minWidth="55.0" prefWidth="55.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="55.0" minWidth="55.0" prefWidth="55.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="55.0" minWidth="55.0" prefWidth="55.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="55.0" minWidth="55.0" prefWidth="55.0" />
+              </columnConstraints>
+              <rowConstraints>
+                  <RowConstraints maxHeight="40.0" minHeight="40.0" prefHeight="40.0" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="40.0" minHeight="40.0" prefHeight="40.0" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="40.0" minHeight="40.0" prefHeight="40.0" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="40.0" minHeight="40.0" prefHeight="40.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="40.0" minHeight="40.0" prefHeight="40.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="40.0" minHeight="40.0" prefHeight="40.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="40.0" minHeight="40.0" prefHeight="40.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <Button fx:id="btnSun" maxHeight="38.0" maxWidth="53.0" minHeight="38.0" minWidth="53.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="53.0" style="-fx-text-fill: #FFFFFF; -fx-background-color: #ff7f7f;" text="Sun" />
+                  <Button fx:id="btnMon" maxHeight="38.0" maxWidth="53.0" minHeight="38.0" minWidth="53.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="53.0" style="-fx-text-fill: #FFFFFF; -fx-background-color: #bfbfbf;" text="Mon" GridPane.columnIndex="1" />
+                  <Button fx:id="btnTue" maxHeight="38.0" maxWidth="53.0" minHeight="38.0" minWidth="53.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="53.0" style="-fx-text-fill: #FFFFFF; -fx-background-color: #bfbfbf;" text="Tue" GridPane.columnIndex="2" />
+                  <Button fx:id="btnWed" maxHeight="38.0" maxWidth="53.0" minHeight="38.0" minWidth="53.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="53.0" style="-fx-text-fill: #FFFFFF; -fx-background-color: #bfbfbf;" text="Wed" GridPane.columnIndex="3" />
+                  <Button fx:id="btnThu" maxHeight="38.0" maxWidth="53.0" minHeight="38.0" minWidth="53.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="53.0" style="-fx-text-fill: #FFFFFF; -fx-background-color: #bfbfbf;" text="Thu" GridPane.columnIndex="4" />
+                  <Button fx:id="btnFri" maxHeight="38.0" maxWidth="53.0" minHeight="38.0" minWidth="53.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="53.0" style="-fx-text-fill: #FFFFFF; -fx-background-color: #bfbfbf;" text="Fri" GridPane.columnIndex="5" />
+                  <Button fx:id="btnSat" maxHeight="38.0" maxWidth="53.0" minHeight="38.0" minWidth="53.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="53.0" style="-fx-text-fill: #FFFFFF; -fx-background-color: #6073ff;" text="Sat" GridPane.columnIndex="6" />
+                  <Button fx:id="btnCal1" maxHeight="38.0" maxWidth="53.0" minHeight="38.0" minWidth="53.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="53.0" style="-fx-background-color: #FFFFFF; -fx-text-fill: #636bff;" GridPane.rowIndex="1" />
+                  <Button fx:id="btnCal2" maxHeight="38.0" maxWidth="53.0" minHeight="38.0" minWidth="53.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="53.0" style="-fx-background-color: #FFFFFF;" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                  <Button fx:id="btnCal3" maxHeight="38.0" maxWidth="53.0" minHeight="38.0" minWidth="53.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="53.0" style="-fx-background-color: #FFFFFF;" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+                  <Button fx:id="btnCal4" maxHeight="38.0" maxWidth="53.0" minHeight="38.0" minWidth="53.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="53.0" style="-fx-background-color: #FFFFFF;" GridPane.columnIndex="3" GridPane.rowIndex="1" />
+                  <Button fx:id="btnCal5" maxHeight="38.0" maxWidth="53.0" minHeight="38.0" minWidth="53.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="53.0" style="-fx-background-color: #FFFFFF;" GridPane.columnIndex="4" GridPane.rowIndex="1" />
+                  <Button fx:id="btnCal6" maxHeight="38.0" maxWidth="53.0" minHeight="38.0" minWidth="53.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="53.0" style="-fx-background-color: #FFFFFF;" GridPane.columnIndex="5" GridPane.rowIndex="1" />
+                  <Button fx:id="btnCal7" maxHeight="38.0" maxWidth="53.0" minHeight="38.0" minWidth="53.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="53.0" style="-fx-background-color: #FFFFFF; -fx-text-fill: #636bff;" GridPane.columnIndex="6" GridPane.rowIndex="1" />
+                  <Button fx:id="btnCal8" maxHeight="38.0" maxWidth="53.0" minHeight="38.0" minWidth="53.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="53.0" style="-fx-background-color: #FFFFFF; -fx-text-fill: #636bff;" GridPane.rowIndex="2" />
+                  <Button fx:id="btnCal9" maxHeight="38.0" maxWidth="53.0" minHeight="38.0" minWidth="53.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="53.0" style="-fx-background-color: #FFFFFF;" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                  <Button fx:id="btnCal10" maxHeight="38.0" maxWidth="53.0" minHeight="38.0" minWidth="53.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="53.0" style="-fx-background-color: #FFFFFF;" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+                  <Button fx:id="btnCal11" maxHeight="38.0" maxWidth="53.0" minHeight="38.0" minWidth="53.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="53.0" style="-fx-background-color: #FFFFFF;" GridPane.columnIndex="3" GridPane.rowIndex="2" />
+                  <Button fx:id="btnCal12" maxHeight="38.0" maxWidth="53.0" minHeight="38.0" minWidth="53.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="53.0" style="-fx-background-color: #FFFFFF;" GridPane.columnIndex="4" GridPane.rowIndex="2" />
+                  <Button fx:id="btnCal13" maxHeight="38.0" maxWidth="53.0" minHeight="38.0" minWidth="53.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="53.0" style="-fx-background-color: #FFFFFF;" GridPane.columnIndex="5" GridPane.rowIndex="2" />
+                  <Button fx:id="btnCal14" maxHeight="38.0" maxWidth="53.0" minHeight="38.0" minWidth="53.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="53.0" style="-fx-background-color: #FFFFFF; -fx-text-fill: #636bff;" GridPane.columnIndex="6" GridPane.rowIndex="2" />
+                  <Button fx:id="btnCal15" maxHeight="38.0" maxWidth="53.0" minHeight="38.0" minWidth="53.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="53.0" style="-fx-background-color: #FFFFFF; -fx-text-fill: #636bff;" GridPane.rowIndex="3" />
+                  <Button fx:id="btnCal16" maxHeight="38.0" maxWidth="53.0" minHeight="38.0" minWidth="53.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="53.0" style="-fx-background-color: #FFFFFF;" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                  <Button fx:id="btnCal17" maxHeight="38.0" maxWidth="53.0" minHeight="38.0" minWidth="53.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="53.0" style="-fx-background-color: #FFFFFF;" GridPane.columnIndex="2" GridPane.rowIndex="3" />
+                  <Button fx:id="btnCal18" maxHeight="38.0" maxWidth="53.0" minHeight="38.0" minWidth="53.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="53.0" style="-fx-background-color: #FFFFFF;" GridPane.columnIndex="3" GridPane.rowIndex="3" />
+                  <Button fx:id="btnCal19" maxHeight="38.0" maxWidth="53.0" minHeight="38.0" minWidth="53.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="53.0" style="-fx-background-color: #FFFFFF;" GridPane.columnIndex="4" GridPane.rowIndex="3" />
+                  <Button fx:id="btnCal20" maxHeight="38.0" maxWidth="53.0" minHeight="38.0" minWidth="53.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="53.0" style="-fx-background-color: #FFFFFF;" GridPane.columnIndex="5" GridPane.rowIndex="3" />
+                  <Button fx:id="btnCal21" maxHeight="38.0" maxWidth="53.0" minHeight="38.0" minWidth="53.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="53.0" style="-fx-background-color: #FFFFFF; -fx-text-fill: #636bff;" GridPane.columnIndex="6" GridPane.rowIndex="3" />
+                  <Button fx:id="btnCal22" maxHeight="38.0" maxWidth="53.0" minHeight="38.0" minWidth="53.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="53.0" style="-fx-background-color: #FFFFFF; -fx-text-fill: #636bff;" GridPane.rowIndex="4" />
+                  <Button fx:id="btnCal23" maxHeight="38.0" maxWidth="53.0" minHeight="38.0" minWidth="53.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="53.0" style="-fx-background-color: #FFFFFF;" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+                  <Button fx:id="btnCal24" maxHeight="38.0" maxWidth="53.0" minHeight="38.0" minWidth="53.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="53.0" style="-fx-background-color: #FFFFFF;" GridPane.columnIndex="2" GridPane.rowIndex="4" />
+                  <Button fx:id="btnCal25" maxHeight="38.0" maxWidth="53.0" minHeight="38.0" minWidth="53.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="53.0" style="-fx-background-color: #FFFFFF;" GridPane.columnIndex="3" GridPane.rowIndex="4" />
+                  <Button fx:id="btnCal26" maxHeight="38.0" maxWidth="53.0" minHeight="38.0" minWidth="53.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="53.0" style="-fx-background-color: #FFFFFF;" GridPane.columnIndex="4" GridPane.rowIndex="4" />
+                  <Button fx:id="btnCal27" maxHeight="38.0" maxWidth="53.0" minHeight="38.0" minWidth="53.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="53.0" style="-fx-background-color: #FFFFFF;" GridPane.columnIndex="5" GridPane.rowIndex="4" />
+                  <Button fx:id="btnCal28" maxHeight="38.0" maxWidth="53.0" minHeight="38.0" minWidth="53.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="53.0" style="-fx-background-color: #FFFFFF; -fx-text-fill: #636bff;" GridPane.columnIndex="6" GridPane.rowIndex="4" />
+                  <Button fx:id="btnCal29" maxHeight="38.0" maxWidth="53.0" minHeight="38.0" minWidth="53.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="53.0" style="-fx-background-color: #FFFFFF; -fx-text-fill: #636bff;" GridPane.rowIndex="5" />
+                  <Button fx:id="btnCal30" maxHeight="38.0" maxWidth="53.0" minHeight="38.0" minWidth="53.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="53.0" style="-fx-background-color: #FFFFFF;" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+                  <Button fx:id="btnCal31" maxHeight="38.0" maxWidth="53.0" minHeight="38.0" minWidth="53.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="53.0" style="-fx-background-color: #FFFFFF;" GridPane.columnIndex="2" GridPane.rowIndex="5" />
+                  <Button fx:id="btnCal32" maxHeight="38.0" maxWidth="53.0" minHeight="38.0" minWidth="53.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="53.0" style="-fx-background-color: #FFFFFF;" GridPane.columnIndex="3" GridPane.rowIndex="5" />
+                  <Button fx:id="btnCal33" maxHeight="38.0" maxWidth="53.0" minHeight="38.0" minWidth="53.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="53.0" style="-fx-background-color: #FFFFFF;" GridPane.columnIndex="4" GridPane.rowIndex="5" />
+                  <Button fx:id="btnCal34" maxHeight="38.0" maxWidth="53.0" minHeight="38.0" minWidth="53.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="53.0" style="-fx-background-color: #FFFFFF;" GridPane.columnIndex="5" GridPane.rowIndex="5" />
+                  <Button fx:id="btnCal35" maxHeight="38.0" maxWidth="53.0" minHeight="38.0" minWidth="53.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="53.0" style="-fx-background-color: #FFFFFF; -fx-text-fill: #636bff;" GridPane.columnIndex="6" GridPane.rowIndex="5" />
+                  <Button fx:id="btnCal36" maxHeight="38.0" maxWidth="53.0" minHeight="38.0" minWidth="53.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="53.0" style="-fx-background-color: #FFFFFF; -fx-text-fill: #636bff;" GridPane.rowIndex="6" />
+                  <Button fx:id="btnCal37" maxHeight="38.0" maxWidth="53.0" minHeight="38.0" minWidth="53.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="53.0" style="-fx-background-color: #FFFFFF;" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+                  <Button fx:id="btnCal38" maxHeight="38.0" maxWidth="53.0" minHeight="38.0" minWidth="53.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="53.0" style="-fx-background-color: #FFFFFF;" GridPane.columnIndex="2" GridPane.rowIndex="6" />
+                  <Button fx:id="btnCal39" maxHeight="38.0" maxWidth="53.0" minHeight="38.0" minWidth="53.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="53.0" style="-fx-background-color: #FFFFFF;" GridPane.columnIndex="3" GridPane.rowIndex="6" />
+                  <Button fx:id="btnCal40" maxHeight="38.0" maxWidth="53.0" minHeight="38.0" minWidth="53.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="53.0" style="-fx-background-color: #FFFFFF;" GridPane.columnIndex="4" GridPane.rowIndex="6" />
+                  <Button fx:id="btnCal41" maxHeight="38.0" maxWidth="53.0" minHeight="38.0" minWidth="53.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="53.0" style="-fx-background-color: #FFFFFF;" GridPane.columnIndex="5" GridPane.rowIndex="6" />
+                  <Button fx:id="btnCal42" maxHeight="38.0" maxWidth="53.0" minHeight="38.0" minWidth="53.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="53.0" style="-fx-background-color: #FFFFFF; -fx-text-fill: #636bff;" GridPane.columnIndex="6" GridPane.rowIndex="6" />
+               </children>
+            </GridPane>
+         </center>
+         <top>
+            <AnchorPane prefHeight="64.0" prefWidth="385.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Label fx:id="lblCalYM" layoutX="147.0" layoutY="17.0" text="2020/1">
+                     <font>
+                        <Font name="DejaVu Sans Mono Bold" size="25.0" />
+                     </font>
+                  </Label>
+                  <Button fx:id="btnCalBeforeMonth" layoutX="85.0" layoutY="21.0" mnemonicParsing="false" onAction="#btnCalBeforeMonthClick" text="&lt;" />
+                  <Button fx:id="btnCalAfterMonth" layoutX="272.0" layoutY="21.0" mnemonicParsing="false" onAction="#btnCalAfterMonthClick" text="&gt;" />
+                  <Button fx:id="btnCalBeforeYear" layoutY="21.0" mnemonicParsing="false" onAction="#btnCalBeforeYearClicl" text="&lt;&lt;" />
+                  <Button fx:id="btnCalAfterYear" layoutX="349.0" layoutY="21.0" mnemonicParsing="false" onAction="#btnCalAfterYearClick" text="&gt;&gt;" />
+               </children>
+            </AnchorPane>
+         </top>
+      </BorderPane>
+      <Label layoutX="24.0" layoutY="14.0" text="Today : ">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblToday" layoutX="83.0" layoutY="15.0" text="2020 / 01 / 30">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <AnchorPane layoutX="426.0" layoutY="52.0" prefHeight="344.0" prefWidth="360.0">
+         <children>
+            <Label layoutX="14.0" layoutY="14.0" text="Date : " />
+            <TextArea fx:id="taSCH" layoutX="14.0" layoutY="37.0" prefHeight="275.0" prefWidth="333.0" />
+            <Button fx:id="btnSave" layoutX="78.0" layoutY="319.0" mnemonicParsing="false" onAction="#btnSaveClick" text="저장" />
+            <Button fx:id="btnClear" layoutX="230.0" layoutY="319.0" mnemonicParsing="false" onAction="#btnClearClick" text="초기화" />
+            <Label fx:id="lblDate" layoutX="54.0" layoutY="14.0" text="2020 / 01 / 30" />
+         </children>
+      </AnchorPane>
+      <ImageView fx:id="btnClose" fitHeight="15.0" fitWidth="15.0" layoutX="778.0" layoutY="14.0" onMouseClicked="#btnCloseClick" pickOnBounds="true" preserveRatio="true" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <image>
+            <Image url="@../z.source/close.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="btnMin" fitHeight="15.0" fitWidth="15.0" layoutX="592.0" layoutY="-41.0" onMouseClicked="#btnMinClick" pickOnBounds="true" preserveRatio="true" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="0.0">
+         <image>
+            <Image url="@../z.source/minu.png" />
+         </image>
+      </ImageView>
+      <Pane layoutX="14.0" layoutY="400.0" prefHeight="15.0" prefWidth="15.0" style="-fx-background-color: #b7ffb8; -fx-border-color: #000000;" />
+      <Pane layoutX="119.0" layoutY="400.0" prefHeight="15.0" prefWidth="15.0" style="-fx-background-color: #cda8ff; -fx-border-color: #000000;" />
+      <Pane layoutX="223.0" layoutY="400.0" prefHeight="15.0" prefWidth="15.0" style="-fx-background-color: #bfd0ff; -fx-border-color: #000000;" />
+      <Label layoutX="35.0" layoutY="400.0" text="오늘 날짜" />
+      <Label layoutX="140.0" layoutY="400.0" text="내 일정" />
+      <Label layoutX="245.0" layoutY="400.0" text="상대 일정" />
+      <Pane layoutX="327.0" layoutY="400.0" prefHeight="15.0" prefWidth="15.0" style="-fx-background-color: #ffa5c0; -fx-border-color: #000000;" />
+      <Label layoutX="348.0" layoutY="400.0" text="양쪽 일정" />
+   </children>
+</AnchorPane>

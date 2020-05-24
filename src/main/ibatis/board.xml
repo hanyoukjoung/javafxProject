@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE sqlMap
+	PUBLIC "-//ibatis.apache.org//DTD SQL Map 2.0//EN"
+	"http://ibatis.apache.org/dtd/sql-map-2.dtd">
+<!--게시판 -->
+<sqlMap namespace="board">
+
+	<select id="selectBoard" resultClass="LboardVO">
+		select * 
+		  from lboard 
+		 order by lsn_board_no desc
+	</select>
+	<insert id="insertLBoard" parameterClass="LboardVO">
+		INSERT INTO LBOARD VALUES(LSN_BOARD_SEQ.NEXTVAL, #lsn_board_cont#, #mem_id#, SYSDATE, 0, #lang_major#, #lang_itrst#)
+	</insert>
+	<select id="getAllNBoardList" resultClass="TotalBoardVO">
+		SELECT NTC_BOARD_NO AS ,
+			   NTC_BOARD_TITLE AS BOARD_TITLE,
+			   NTC_BOARD_CONT AS BOARD_CONT,
+			   ADMIN_ID AS MEM_ID,
+			   TO_CHAR(NTC_BOARD_DATE, 'YYYY-MM-DD') AS BOARD_DATE,
+			   NTC_BOARD_CNT AS BOARD_CNT 
+		  FROM NBOARD 
+		  ORDER BY NTC_BOARD_NO DESC 
+	</select>
+	<select id="getAllFBoardList" resultClass="TotalBoardVO">
+		SELECT FREE_BOARD_NO AS BOARD_NO,
+			   FREE_BOARD_TITLE AS BOARD_TITLE,
+			   FREE_BOARD_CONT AS BOARD_CONT,
+			   MEM_ID AS MEM_ID,
+			   TO_CHAR(FREE_BOARD_DATE, 'YYYY-MM-DD') AS BOARD_DATE,
+			   FREE_BOARD_CNT AS BOARD_CNT 
+		FROM   FBOARD 
+		ORDER BY BOARD_NO DESC 
+	</select>
+	<select id="getAllFAQBoardList" resultClass="TotalBoardVO">
+		SELECT FAQ_BOARD_NO AS BOARD_NO, 
+			   FAQ_BOARD_TITLE AS BOARD_TITLE,
+			   FAQ_BOARD_CONT AS BOARD_CONT,
+			   ADMIN_ID AS MEM_ID,
+			   TO_CHAR(FAQ_BOARD_DATE, 'YYYY-MM-DD') AS BOARD_DATE
+		FROM   FAQBOARD 
+		ORDER BY BOARD_NO DESC 
+	</select>
+	<insert id="insertFAQBoard" parameterClass="FAQBoardVO">
+		INSERT INTO FAQBOARD 
+		VALUES(FAQ_BOARD_SEQ.NEXTVAL, #faq_board_title#, #faq_board_cont#, #admin_id#, sysdate)
+	</insert>
+	<delete id="deleteFAQBoard" parameterClass="int">
+		DELETE FROM FAQBOARD 
+		WHERE FAQ_BOARD_NO = #faqBoard_no# 
+	</delete>
+	<insert id="insertFBoard" parameterClass="FboardVO" >
+		INSERT INTO FBOARD VALUES(FREE_BOARD_SEQ.nextval, #free_board_title#, #free_board_cont#, #mem_id#, sysdate, 0) 
+	</insert>
+	<delete id="deleteFBoard" parameterClass="int">
+		DELETE FROM FBOARD 
+		WHERE  FREE_BOARD_NO = #free_board_no#
+	</delete>
+	<update id="cntPlusFBoard" parameterClass="map">
+		UPDATE FBOARD 
+		SET    FREE_BOARD_CNT = #free_board_cnt# 
+		WHERE  FREE_BOARD_NO = #free_board_no# 
+	</update>
+	<update id="updateFBoard" parameterClass="FboardVO">
+		UPDATE FBOARD 
+		SET    FREE_BOARD_TITLE = #free_board_title#, 
+			   FREE_BOARD_CONT = #free_board_cont# 
+		WHERE  FREE_BOARD_NO = #free_board_no# 
+	</update>
+	<insert id="insertNBOard" parameterClass="NBoardVO">
+		INSERT INTO NBOARD 
+		VALUES(NTC_BOARD_SEQ.NEXTVAL, #ntc_board_title#, #ntc_board_cont#, #admin_id#, sysdate, 0)
+	</insert>
+	<select id="getAllReportFBoard" resultClass="TotalBoardVO">
+		SELECT  A.FREE_BOARD_NO                 AS BOARD_NO,
+		        A.FREE_BOARD_TITLE              AS BOARD_TITLE,
+		        A.FREE_BOARD_CONT               AS BOARD_CONT,
+		        A.MEM_ID                        AS MEM_ID,
+		        TO_CHAR(A.FREE_BOARD_DATE, 'YYYY-MM-DD') AS BOARD_DATE, 
+		(SELECT RPT_CATE 
+		FROM REPORT_CATE C 
+		WHERE B.RPT_CATE_NO = C.RPT_CATE_NO)    AS RPT_CATE,
+		        B.MEM_ID                        AS RPT_MEM_ID,
+		        B.RPT_CONT                      AS RPT_CONT,
+		        TO_CHAR(B.RPT_DATE, 'YYYY-MM-DD')        AS RPT_DATE, 
+		        C.RPT_CNT
+		FROM    FBOARD                              A,
+		(SELECT *
+		FROM    REPORT W
+		WHERE   SUBSTR(W.RPT_TARGET, 0, 2) = 'fb')  B,
+		
+		(SELECT COUNT(*) AS RPT_CNT,
+		                RPT_TARGET
+		        FROM REPORT Q
+		        WHERE Q.RPT_NO = RPT_NO
+		        GROUP BY RPT_TARGET)                C
+		WHERE   A.FREE_BOARD_NO = SUBSTR(B.RPT_TARGET, 3)
+		  AND   B.RPT_TARGET(+) = C.RPT_TARGET  
+	</select>
+
+</sqlMap>

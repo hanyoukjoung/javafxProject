@@ -1,0 +1,86 @@
+#pane {
+	-fx-background-color: #f9f9f9;
+	-fx-border-color: gray;
+	-fx-font-family: "GODOM";
+}
+
+#btnClose:hover {
+	-fx-cursor: hand;
+}
+
+#lblTitle {
+	-fx-font-size: 17;
+}
+
+#lblText {
+	-fx-font-size:12;
+}
+
+#comboSigungooName, #comboSidoName {
+	-fx-background-color: #f9f9f9;
+	-fx-border-color: gray;
+	-fx-font-size: 13;
+}
+
+#comboSigungooName:hover, #comboSidoName:hover {
+	-fx-background-color: #f9f9f9;
+	-fx-border-color: gray;
+	-fx-font-size: 13;
+	-fx-cursor: hand;
+}
+
+#tfRna {
+	-fx-background-color: #f9f9f9;
+	-fx-border-color: gray;
+	-fx-font-size: 13;
+}
+
+#btnSearch {
+	-fx-background-color: #f9f9f9;
+	-fx-border-color: gray;
+	-fx-font-size: 13;
+}
+
+#btnSearch:hover {
+	-fx-background-color: lightgray;
+	-fx-border-color: gray;
+	-fx-font-size: 13;
+	-fx-cursor: hand;
+}
+
+#tableAddr {
+	-fx-border-color: lightgray;
+	-fx-font-family: "GODOM";
+}
+
+#colZip, #colAddr {
+	-fx-font-family: "GODOM";
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

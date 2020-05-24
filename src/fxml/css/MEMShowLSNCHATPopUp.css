@@ -1,0 +1,43 @@
+#mainFrame{
+	-fx-border-color: #c8d4e8;
+	-fx-border-width: 2px;
+	-fx-background-color: #d1dced;
+	-fx-font-family: "GODOM";
+	/*-fx-background-image:url("../z.source/computer.jpg");*/
+}
+#btnCodeRun{
+	-fx-font-family: "GODOM";
+	-fx-border-color: #123266;
+	-fx-background-color: #123266;
+	-fx-text-fill: #f9f9f9;
+	-fx-font-size: 13;
+	/*-fx-border-radius: 5px;*/
+}
+#btnCodeRun:hover{
+	-fx-font-size:13;
+	-fx-cursor: hand;
+}
+
+#lblUserName, #lblConsole, #lblChat, #lblEditor {
+	-fx-font-family: "GODOM";
+	-fx-background-color: #d1dced;
+	-fx-border-color: #d1dced;
+}
+
+#taChat,#tfChat {
+	-fx-background-color: #f9f9f9;
+	-fx-font-family: "GODOM";
+	-fx-font-size: 12;
+	-fx-border-color: #d1dced;
+}
+
+#comboCodeLang {
+	-fx-background-color: #f9f9f9;
+	-fx-font-family: "GODOM";
+	-fx-border-color: gray;
+}
+
+#comboCodeLang:hover, #imgFileAdd:hover, #imgFileList:hover, #imgSCH:hover, #imgBack:hover, 
+#imgRPT:hover, #btnMin:hover, #btnBack:hover, #btnClose:hover, #btnCodeRun {
+	-fx-cursor: hand;
+}

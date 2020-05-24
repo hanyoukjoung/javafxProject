@@ -1,0 +1,9 @@
+#pane{
+	-fx-border-color:#3f2b63;
+	-fx-border-width:2xp;
+	-fx-background-color:#ffffff;
+}
+
+#lblTitle{
+	-fx-font-size:13pt;
+}

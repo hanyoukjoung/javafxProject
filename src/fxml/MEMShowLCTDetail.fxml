@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- 회원이 강의를 조회하고 클릭했을시  -->
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="subFrameLCT" prefHeight="600.0" prefWidth="850.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.MEMShowLCTDetailController">
+   <children>
+      <VBox prefHeight="600.0" prefWidth="850.0">
+         <children>
+            <HBox alignment="CENTER_LEFT" prefHeight="76.0" prefWidth="850.0">
+               <children>
+                  <Label fx:id="lblLCTName" prefHeight="36.0" prefWidth="152.0" text="강의 이름">
+                     <font>
+                        <Font size="30.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets left="40.0" />
+                     </HBox.margin>
+                  </Label>
+                  <Button fx:id="btnRPT" mnemonicParsing="false" onAction="#btnRPTClick" prefHeight="28.0" prefWidth="104.0" text="신고" textFill="WHITE">
+                     <HBox.margin>
+                        <Insets left="530.0" top="30.0" />
+                     </HBox.margin></Button>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="454.0" prefWidth="850.0">
+               <children>
+                  <TableView fx:id="table" prefHeight="431.0" prefWidth="800.0">
+                    <columns>
+                      <TableColumn fx:id="coldiv" prefWidth="90.0" text="분류" />
+                      <TableColumn fx:id="coltitle" prefWidth="161.0" text="주제" />
+                        <TableColumn fx:id="colcont" prefWidth="444.0" text="설명" />
+                        <TableColumn fx:id="colsubs" prefWidth="104.0" text="구독 처리" />
+                    </columns>
+                  </TableView>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER_RIGHT" prefHeight="55.0" prefWidth="850.0">
+               <children>
+                  <Button fx:id="btnModify" mnemonicParsing="false" onAction="#btnModifyClick" prefHeight="28.0" prefWidth="75.0" text="구 독">
+                     <HBox.margin>
+                        <Insets right="10.0" />
+                     </HBox.margin>
+                  </Button>
+                  <Button fx:id="btnDel" mnemonicParsing="false" onAction="#btnDelAction" prefHeight="28.0" prefWidth="105.0" text="구독 취소">
+                     <HBox.margin>
+                        <Insets right="10.0" />
+                     </HBox.margin>
+                  </Button>
+                  <Button fx:id="btnCancel" mnemonicParsing="false" onAction="#btnCancelClick" prefHeight="28.0" prefWidth="105.0" text="뒤로 가기">
+                     <HBox.margin>
+                        <Insets right="10.0" />
+                     </HBox.margin>
+                  </Button>
+                  <Button fx:id="btnStar" mnemonicParsing="false" onAction="#btnStarClick" prefHeight="28.0" prefWidth="75.0" text="평 점">
+                     <HBox.margin>
+                        <Insets right="25.0" />
+                     </HBox.margin>
+                  </Button>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

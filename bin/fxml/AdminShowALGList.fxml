@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Pagination?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="mainFrame" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" stylesheets="@css/AdminShowALGList.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.AdminShowALGListController">
+   <children>
+      <VBox prefHeight="600.0" prefWidth="850.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <HBox alignment="CENTER_LEFT" prefHeight="142.0" prefWidth="850.0">
+               <children>
+                  <Label fx:id="lblMainTitle" text="알고리즘 문제 관리">
+                     <font>
+                        <Font size="35.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets left="280.0" top="15.0" />
+                     </HBox.margin>
+                  </Label>
+                  <Button fx:id="btnAlgExerInsert" mnemonicParsing="false" onAction="#btnAlgExerInsertClick" prefHeight="30.0" prefWidth="137.0" text="문제 등록">
+                     <HBox.margin>
+                        <Insets left="80.0" top="70.0" />
+                     </HBox.margin>
+                  </Button>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="430.0" prefWidth="200.0">
+               <children>
+                  <TableView fx:id="tableAlgorithmManage" maxWidth="750.0" prefHeight="320.0" prefWidth="750.0">
+                    <columns>
+                      <TableColumn fx:id="colCate" minWidth="75.0" prefWidth="75.0" text="분류" />
+                      <TableColumn fx:id="colExerNum" prefWidth="87.0" text="문제 번호" />
+                        <TableColumn fx:id="colTitle" prefWidth="323.0" text="제목" />
+                        <TableColumn fx:id="colSubmitNum" prefWidth="92.0" text="제출자 수" />
+                        <TableColumn fx:id="colCorrectNum" prefWidth="93.0" text="정답자 수" />
+                        <TableColumn fx:id="colCorrectPercent" text="정답률" />
+                    </columns>
+                  </TableView>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <Pagination fx:id="pageAlgManage" maxPageIndicatorCount="5" maxWidth="250.0" pageCount="10" prefHeight="200.0" prefWidth="200.0" scaleX="1.2" scaleY="1.2">
+                     <HBox.margin>
+                        <Insets />
+                     </HBox.margin>
+                     <padding>
+                        <Insets top="15.0" />
+                     </padding>
+                  </Pagination>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

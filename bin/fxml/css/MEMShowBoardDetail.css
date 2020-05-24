@@ -1,0 +1,46 @@
+#subFrameBoardShowDetail {
+	-fx-background-color: #f9f9f9;
+}
+
+#lblMainTitle {
+	-fx-background-color: #f9f9f9;
+	-fx-font-family: "GODOM";	
+	-fx-font-size:30;
+}
+
+#lblTitle, #lblWriter, #lblCont, #lblComment , #lblWriteComment { 
+	-fx-font-family: "GODOM";	
+	-fx-font-size:14;
+}
+
+#fboardMemId, #fboardTitle, #fboardCont {
+	-fx-border-color: lightgray;
+	-fx-background-color: #f9f9f9;
+	-fx-font-family: "GODOM";
+	-fx-font-size:14;
+}
+
+#ScollPaneComment {
+	-fx-border-color: lightgray;
+	-fx-background-color: #f9f9f9;
+	-fx-font-family: "GODOM";
+	-fx-font-size:13;
+} 
+#taCommentContent {
+	-fx-border-color: lightgray;
+	-fx-background-color: #f9f9f9;
+	-fx-font-family: "GODOM";
+	-fx-font-size:13;
+}
+
+#btnCMNTInsert, #btnModify, #btnDelete, #btnReport, #btnBack {
+	-fx-background-color: #f9f9f9;
+	-fx-border-color: lightgray;
+	-fx-font-family: "GODOM";
+	-fx-font-family: 15;
+}
+
+#btnCMNTInsert:hover, #btnModify:hover, #btnDelete:hover, #btnReport:hover, #btnBack:hover {
+	-fx-background-color: lightgray;
+	-fx-cursor: hand;
+}

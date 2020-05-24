@@ -1,0 +1,92 @@
+/*
+ * @author 강인경
+ * @since 2020-02-03
+ *
+ * [ID 안내]
+ * 
+ * msgFrame : AnchorPane
+ 
+ // 순차적으로 회원의 이름이 저장된 Label
+ * name1
+ * name2
+ * name3
+ * name4
+ * name5
+ * name6
+ 
+ // 순차적으로 회원의 메세지 내용이 저장된 Text Area
+ * taMSG1
+ * taMSG2 
+ * taMSG3 
+ * taMSG4 
+ * taMSG5 
+ * taMSG6
+ 
+ * btnMini : 창 크기 최소화 button 
+ * btnClose : 창 닫기 button
+ * pageMSG : pagination
+ *
+ */
+ 
+#msgFrame {
+	-fx-background-color: #f9f9f9;
+	-fx-border-color: gray;	
+	-fx-font-family: "netmarble Bold";
+} 
+
+#MSGTitle {
+	-fx-font-family: "netmarble Bold";
+	-fx-font-size: 40;
+}
+
+#name1, #name2, #name3, #name4, #name5, #name6 {
+	-fx-font-family: "GODOM";
+	-fx-font-size: 20;
+}
+
+#taMSG1, #taMSG2, #taMSG3, #taMSG4, #taMSG5, #taMSG6 {
+	-fx-font-family: "GODOM";
+	-fx-font-size: 15;
+	-fx-text-base-color: #b3afaf;
+}
+
+#pageMSG {
+	-fx-cursor: hand;
+}
+
+/* Remove spacing */
+.pagination > .pagination-control > .control-box {
+    -fx-spacing: 0;
+}
+
+/* You can control the actual button sizes here */
+.pagination > .pagination-control > .control-box > .number-button,
+.pagination > .pagination-control > .control-box > .bullet-button,
+.pagination > .pagination-control > .control-box > .left-arrow-button,
+.pagination > .pagination-control > .control-box > .right-arrow-button {
+    -fx-background-insets: 0, 1;
+    -fx-background-color: lightgray, #FAFAFA;
+    -fx-min-width: 30;
+    -fx-min-height: 30;
+}
+
+/* Colors on hover */
+.pagination > .pagination-control > .control-box > .number-button:hover,
+.pagination > .pagination-control > .control-box > .bullet-button:hover,
+.pagination > .pagination-control > .control-box > .left-arrow-button:hover,
+.pagination > .pagination-control > .control-box > .right-arrow-button:hover {
+    -fx-background-insets: 0;
+    -fx-background-color: lightgray;
+}
+
+/* Selected toggle color */
+.pagination > .pagination-control > .control-box > .number-button:selected,
+.pagination > .pagination-control > .control-box > .bullet-button:selected{
+    -fx-background-insets: 0;
+    -fx-background-color: #58379A;
+    -fx-text-fill: white;
+}
+
+#btnClose:hover, #btnMin:hover {
+	-fx-cursor: hand;
+}

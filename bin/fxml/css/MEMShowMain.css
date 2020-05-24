@@ -1,0 +1,137 @@
+#mainFrame {
+	-fx-background-color: #f9f9f9;
+	-fx-border-color: lightgray;
+}
+
+#subFrameList {
+	-fx-border-color: #142438;
+	-fx-background-color: #142438;	
+}
+
+#underSubframeList, #rightText {
+	-fx-border-color: #142438;
+	-fx-background-color: #142438;
+}
+
+#lblRight1, #lblRight2 {
+	-fx-text-fill: #f9f9f9;
+}
+
+#black {
+	-fx-background-color: black;
+}
+ 
+#mainTitle {
+	-fx-font-family: "Catharsis Cargo";
+	-fx-font-size: 45;
+	-fx-font-weight: bold;
+}
+
+#mainTitle:hover{
+	-fx-cursor: hand;
+}
+
+#comboMLang, #comboILang {
+	-fx-font-family: "GODOM";
+	-fx-font-size: 12;
+	-fx-border-radius:5px;
+	-fx-border-color: gray;
+	-fx-background-color: #f9f9f9;
+}
+
+#btnMSG, #btnLogOut, #btnMsg {
+	-fx-font-family: "GODOM";
+	-fx-font-size: 14;
+	-fx-border-radius:5px;
+	-fx-border-color: #3F2B63;
+	-fx-background-color: #f9f9f9;
+	
+}
+
+#btnLogOut:hover, #btnMsg:hover, #btnMessage:hover {
+	-fx-cursor: hand;
+}
+
+#btnSearch {
+	-fx-font-family: "GODOM";
+	-fx-border-color: gray;
+	-fx-background-color: #f9f9f9;
+	-fx-border-radius:7px;
+	-fx-font-size: 14;
+	-fx-text-fill: black;
+}
+
+#btnSearch:hover {
+	-fx-font-family: "GODOM";
+	-fx-font-size: 14;
+	-fx-border-color: lightgray;
+	-fx-background-color: lightgray;
+	-fx-text-fill: black;
+	-fx-border-radius:7px;
+	-fx-cursor: hand;
+}
+
+#tfSearch {
+	-fx-border-radius:5px;
+	-fx-border-color: gray;
+	-fx-background-color: #f9f9f9;
+}
+/*-------------------------------- */
+#btnClose, #btnMini {
+	-fx-background-color: #f9f9f9;
+}
+
+#btnClose:hover, #btnMini:hover { 
+	-fx-cursor: hand;
+}
+/*-------------------------------- */
+
+
+#lblUserName {
+	-fx-font-family: "GodoM";
+	-fx-font-size: 15;
+	-fx-background-color: #f9f9f9;
+}
+
+#lblRight1, #lblRight2 {
+	-fx-font-family: "GODOM";
+}
+
+/*----------------------------------------------------*/
+
+#btnMyPage, #btnALG, #btnMyLCT, #btnSubLCT, #btnBoard, #btnLSN,#btnAllLCT {
+	-fx-font-family: "GODOM";
+	-fx-font-size: 15;
+	-fx-border-color: #3F2B63;
+	-fx-background-color: #f9f9f9;
+}
+
+#btnMyPage:hover, #btnALG:hover, #btnMyLCT:hover, #btnSubLCT:hover, #btnBoard:hover, #btnLSN:hover, #btnAllLCT:hover{
+	-fx-font-family: "GODOM";
+	-fx-font-size: 15;
+	-fx-border-color: #3F2B63;
+	-fx-background-color: #ebe8ed;
+	-fx-text-fill: #3f2b63;
+	-fx-cursor: hand;
+}
+
+/*----------------------------------------------------*/
+
+#lblWelcome {
+	-fx-font-family: "GodoM";
+	-fx-font-size: 13;
+	-fx-background-color: #f9f9f9;
+}
+
+#btnLogOut, #btnMSG {
+	-fx-background-color: #f9f9f9;
+	-fx-border-color: #f9f9f9;
+}
+
+#imgUser:hover, #btnLogOut:hover, #btnMSG:hover, #btnBoard,
+#btnALG:hover, #btnMyLCT:hover, #btnSubLCT:hover, #btnMyPage:hover, #btnLSN:hover
+#black:hover, #btnSearch:hover, #tfSearch:hover, #comboMLang:hover, #comboILang:hover {
+	-fx-cursor: hand;
+}
+
+

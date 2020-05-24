@@ -1,0 +1,18 @@
+#btnDeleteMessage, #btnLessonRequest{
+	-fx-border-color:#3f2b63;
+	-fx-background-color:f9f9f9;
+	-fx-border-radius:5;
+}
+#btnDeleteMessage:hover, #btnLessonRequest:hover{
+	-fx-background-color:#cca0ff;
+	-fx-border-color:#cca0ff;
+	-fx-text-fill:ffffff;
+	-fx-cursor:hand;
+}
+#pageLessonEval:hover{
+	-fx-cursor:hand;
+}
+#btnStar1,#btnStar2,#btnStar3,#btnStar4,#btnStar5{
+	-fx-background-color:f9f9f9;
+}
+#pane{-fx-background-image : url("../../z.source/computer.jpg");}

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Pagination?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="subFrameBrd" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onDragDetected="#subFrameBrdOnMouseDrag" stylesheets="@css/AdminShowBoardList.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.AdminShowBoardListController">
+   <children>
+      <VBox prefHeight="600.0" prefWidth="850.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <HBox prefHeight="50.0" prefWidth="200.0">
+               <children>
+                  <Label fx:id="lblMainTitle" text="게시판">
+                     <font>
+                        <Font size="35.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets bottom="20.0" left="45.0" right="20.0" top="30.0" />
+                     </HBox.margin>
+                  </Label>
+                  <ComboBox fx:id="comboBoardList" onAction="#comboBoardListClick" prefHeight="30.0" prefWidth="160.0" promptText="자유게시판">
+                     <HBox.margin>
+                        <Insets left="485.0" top="50.0" />
+                     </HBox.margin>
+                  </ComboBox>
+               </children>
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+            </HBox>
+            <TableView fx:id="tableBoard" maxHeight="450.0" maxWidth="780.0" onMouseClicked="#tableBoardClick" prefHeight="453.0" prefWidth="760.0">
+              <columns>
+                <TableColumn fx:id="colBoardNo" prefWidth="89.0" text="게시글 번호" />
+                <TableColumn fx:id="colBoardTitle" prefWidth="376.0" text="게시글 제목" />
+                  <TableColumn fx:id="colBoardWriter" minWidth="0.0" prefWidth="108.0" text="작성자" />
+                  <TableColumn fx:id="colBoardDate" prefWidth="113.0" text="작성일자" />
+                  <TableColumn fx:id="colBoardCnt" prefWidth="85.0" text="조회수" />
+              </columns>
+               <VBox.margin>
+                  <Insets left="40.0" right="35.0" />
+               </VBox.margin>
+            </TableView>
+            <HBox prefHeight="72.0" prefWidth="850.0">
+               <children>
+                  <Pagination fx:id="pageBoard" maxPageIndicatorCount="5" prefHeight="65.0" prefWidth="200.0">
+                     <HBox.margin>
+                        <Insets left="320.0" />
+                     </HBox.margin>
+                  </Pagination>
+                  <Button fx:id="btnConfirm" mnemonicParsing="false" onAction="#btnConfirmClick" prefWidth="120.0" text="게시글 등록">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets left="175.0" top="10.0" />
+                     </HBox.margin>
+                  </Button>
+               </children>
+            </HBox>
+         </children></VBox>
+   </children>
+</AnchorPane>

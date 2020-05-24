@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE sqlMap
+	PUBLIC "-//ibatis.apache.org//DTD SQL Map 2.0//EN"
+	"http://ibatis.apache.org/dtd/sql-map-2.dtd">
+<!--강의(1:1레슨) -->
+<sqlMap namespace="lesson">
+
+	<select id="getRoomList" resultClass="ChatVO" parameterClass="String">
+		SELECT * 
+	    FROM    CHAT A, (SELECT   CHAT_ROOM_NO
+	                    FROM    CHAT_MEM
+	                    WHERE   MEM_ID = #MEM_ID#) B
+	    WHERE   A.CHAT_ROOM_NO = B.CHAT_ROOM_NO
+	      AND	A.CHAT_END_YN = 'N'
+	</select>
+	
+	<select id="getUserNameForChatNo" resultClass="MemberVO" parameterClass="Map">
+		SELECT 	*
+		FROM	MEMBER
+		WHERE	MEM_ID = 
+				(SELECT	MEM_ID 
+				FROM	CHAT_MEM
+				WHERE	CHAT_ROOM_NO = TO_NUMBER(#CHAT_ROOM_NO#)
+		  		  AND	MEM_ID != #MEM_ID#)
+	</select>
+	
+	<update id="saveData" parameterClass="Map">
+		UPDATE	CHAT
+		   SET	CHAT_CONT = #CHAT#,
+		   		CODE_CONT = #CODE#,
+		   		CHAT_END_DATE = SYSDATE
+		 WHERE	CHAT_ROOM_NO = TO_NUMBER(#CHAT_ROOM_NO#)
+	</update>
+	
+	<select id="getRoomInfo" resultClass="ChatContVO" parameterClass="int">
+		SELECT	CHAT_CONT, CODE_CONT
+		FROM	CHAT
+		WHERE	CHAT_ROOM_NO = #CHAT_ROOM_NO#
+	</select>
+	
+	<select id="getFileList" resultClass="ChatFileVO" parameterClass="int">
+		SELECT	*
+		FROM	CHAT_FILE
+		WHERE	CHAT_ROOM_NO = #CHAT_ROOM_NO#
+	</select>
+	
+	<select id="getMonthSCHE" resultClass="int" parameterClass="Map">
+		SELECT	TO_CHAR(SCHE_DATE, 'DD') AS SCHE_DATE
+		FROM	SCHEDULE
+		WHERE	MEM_ID = #MEM_ID#
+		  AND	TO_CHAR(SCHE_DATE, 'YYYYMM') = #SCHE_DATE#
+	</select>
+	
+	<select id="getDaySCHE" resultClass="ScheduleVO" parameterClass="Map">
+		SELECT	*
+		FROM	SCHEDULE
+		WHERE	MEM_ID = #MEM_ID#
+		  AND	TO_CHAR(SCHE_DATE, 'YYYYMMDD') = #SCHE_DATE#
+	</select>
+	
+	<update id="updateSCHECont" parameterClass="Map">
+		UPDATE	SCHEDULE
+		   SET	SCHE_CONT = #SCHE_CONT#
+		 WHERE	SCHE_NO = TO_NUMBER(#SCHE_NO#)	
+	</update>
+	
+	<insert id="insertSCHECont" parameterClass="ScheduleVO">
+		INSERT	INTO SCHEDULE
+		VALUES(SCHE_SEQ.NEXTVAL, #mem_id#, #target_id#, TO_DATE(#sche_date#||'000000', 'YYYYMMDDHH24MISS'), #sche_cont#)
+	</insert>
+	
+</sqlMap>

@@ -1,0 +1,50 @@
+/*
+ * @author 강인경
+ * @since 2020-02-03
+ *
+ * [ID 안내]
+ * 
+ * subFrameAddLCT : AnchorPane
+ * tableAddLCT : 강의 추가를 할 수 있는 Table
+ * colCate : (강의) 분류 컬럼(열)
+ * colSubject : (강의) 주제 컬럼(열)
+ * colCont : (강의) 설명 컬럼(열)
+ * btnInsert : 추가 button
+ * btnModify : 수정 button
+ * btnDel : 삭제 button
+ * 
+ */
+ 
+#subFrameAddLCT {
+	-fx-background-color: #f9f9f9;
+}
+
+#tableAddLCT {
+	-fx-background-color: #f9f9f9;
+	-fx-border-color: #3f2b63;
+	/*-fx-opacity: 0.2;*/
+	-fx-font-family: "GODOM";
+	-fx-font-size:12;
+}
+
+#colCate, #colSubject, #colCont {
+	-fx-font-family: "GODOM";
+	-fx-font-size:12;
+}
+
+#btnInsert, #btnModify, #btnDel {
+	-fx-background-color: #f9f9f9;
+	-fx-border-color: #3f2b63;
+	-fx-font-family: "GODOM";
+	-fx-font-size:15;
+}
+
+#btnInsert:hover, #btnModify:hover, #btnDel:hover {
+	-fx-border-color: #3f2b63;
+	-fx-background-color: #3f2b63;
+	-fx-text-fill: #f9f9f9;
+	-fx-font-family: "GODOM";
+	-fx-font-size:15;
+	-fx-cursor: hand;
+}
+ 

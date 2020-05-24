@@ -1,0 +1,85 @@
+/*
+ * @author 강인경
+ * @since 2020-02-03
+ *
+ * [ID 안내]
+ * 
+ * subFrameBrd : AnchorPane
+ * comboBoardList : 게시판 카테고리 ComboBox
+ * tableBoard : 게시판 Table
+ * colBoardNo : 게시글 번호 컬럼(열)
+ * colBoardTitle : 게시글 제목 컬럼(열)
+ * colBoardWriter : 게시글 작성자 컬럼(열)
+ * colBoardDate : 게시글 작성일자 컬럼(열)
+ * colBoardCnt : 게시글 조회수 컬럼(열)
+ * pageBoard : pagination
+ * btnConfirm : 게시글 등록 button
+ *
+ */
+
+#subFrameBrd {
+	-fx-background-color: #f9f9f9;
+}
+
+#lblMainTitle {
+	-fx-background-color: #f9f9f9;
+	-fx-font-family: "GODOM";
+	-fx-font-size: 35;
+}
+
+#comboBoardList {
+	-fx-background-color: #f9f9f9;
+	-fx-border-color: #3f2b63;
+	-fx-font-family: "GODOM";
+	-fx-font-size: 12;
+}
+
+#comboBoardList:hover {
+	-fx-cursor: hand;
+}
+
+#tableBoard {
+	-fx-background-color: #f9f9f9;
+	-fx-border-color: #3f2b63;
+	-fx-font-family: "GODOM";
+	-fx-font-size: 12;
+}
+
+#colBoardNo, #colBoardTitle, #colBoardWriter, #colBoardDate, #colBoardCnt {
+	-fx-font-family: "GODOM";
+	-fx-font-size: 12;
+}
+
+#comboBoardList{
+	-fx-border-radius:5px;
+}
+
+#pageBoard {
+	-fx-font-faily: "GODOM";
+	-fx-font-size: 15;
+}
+
+#btnConfirm {
+	-fx-background-color: #f9f9f9;
+	-fx-border-color: #3f2b63;
+	-fx-border-radius:5px;
+	-fx-font-family: "GODOM";
+	-fx-font-size: 15;
+}
+
+#btnConfirm:hover {
+	-fx-background-color: #3f2b63;
+	-fx-border-color: #3f2b63;
+	-fx-text-fill: #f9f9f9;
+	-fx-font-family: "GODOM";
+	-fx-font-size: 15;
+	-fx-cursor: hand;
+}
+
+
+
+
+
+
+
+

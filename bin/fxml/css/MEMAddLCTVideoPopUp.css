@@ -1,0 +1,70 @@
+/*
+ * @author 강인경
+ * @since 2020-02-03
+ *
+ * [ID 안내]
+ * 
+ * subFrameLCTbtnInsert : 외부를 감싸는 AnchorPane
+ * btnImgMin : 창 크기 최소화 이미지
+ * btnImgClose : 창 닫기 이미지
+ * lblTitle : '제목' Label
+ * tfTitle : 제목을 입력하는 Text Field
+ * btnFileChoice : 파일을 선택할 수 있는 button
+ * tfFileChoice : 파일 선택시 파일의 경로가 나타나는 Text Field
+ * btnConfirm : 확인 button
+ * btnCancel : 취소 button
+ * 
+ */
+ 
+#subFrameLCTbtnInsert {
+ 	-fx-background-color: #f9f9f9;
+}
+
+#btnImgMin:hover, #btnImgClose:hover {
+	-fx-cursor: hand;	
+}
+
+#btnConfirm, #btnCancel {
+	-fx-background-color: #f9f9f9;
+	-fx-border-color: #3f2b63;
+	-fx-font-family: "GODOM";
+	-fx-font-size: 15;
+}
+
+
+#btnConfirm:hover, #btnCancel:hover {
+	-fx-background-color: #3f2b63;
+	-fx-border-color: #3f2b63;
+	-fx-text-fill: #f9f9f9;
+	-fx-cursor: hand;
+	-fx-font-size: 15;
+}
+
+#btnFileChoice {
+	-fx-background-color: #f9f9f9;
+	-fx-border-color: #3f2b63;
+	-fx-font-family: "GODOM";
+	-fx-font-size: 13;
+}
+
+#btnFileChoice:hover {
+	-fx-background-color: #3f2b63;
+	-fx-border-color: #3f2b63;
+	-fx-text-fill: #f9f9f9;
+	-fx-cursor: hand;
+	-fx-font-size: 13;
+}
+
+#tfTitle, #tfFileChoice {
+	-fx-font-family: "GODOM";
+	-fx-font-size: 14;
+	-fx-background-color: #f9f9f9;
+	-fx-border-color: #3f2b63;
+}
+
+
+
+
+
+
+

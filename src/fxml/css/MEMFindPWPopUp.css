@@ -1,0 +1,20 @@
+#btnAdductionSend, #btnAdductionCheck, #btnConfirm, #btnClose, #btnMin{
+	-fx-background-color:f9f9f9;
+}
+
+#btnAdductionSend:hover, #btnAdductionCheck:hover, #btnConfirm:hover{
+	-fx-background-color:#cca0ff;
+	-fx-border-color:#cca0ff;
+	-fx-text-fill:#ffffff;
+	-fx-cursor:hand;
+}
+
+#btnAdductionSend, #btnAdductionCheck, #btnConfirm{
+	-fx-border-color:#3f2b63;
+}
+
+#btnClose:hover, #btnMin:hover{
+	-fx-text-fill:#cca0ff;
+}
+
+#pane{-fx-background-image : url("../../z.source/computer.jpg");}
